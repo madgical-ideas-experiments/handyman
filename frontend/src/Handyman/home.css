@@ -1,0 +1,40 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    height: 25%;
+    overflow-y:auto;
+}
+.btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.card_body{
+    background-image: url('../images/vegetable.png');
+    background-repeat:no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    height: 6.25rem;
+}
+
+.card_items{
+    margin-left: 1rem;
+    padding-top: .5rem;
+}
+
+.items_list{
+    float: left;
+}
+
+.vender{
+    float: left;
+}
+
+.message{
+    padding-left: 1rem;
+}
