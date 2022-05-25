@@ -1,0 +1,90 @@
+*{
+ margin: 0;
+ padding: 0;   
+}
+
+
+
+.provider_child{
+    margin-top: 1rem;
+    margin-left: .6rem;
+    border-radius: 20px;  
+}
+
+.sel_name{
+    font-size: 18px;
+}
+
+.available{
+    display: flex;
+    flex-direction: row;
+}
+
+.aval_status{
+    font-size: 15px;
+}
+.aval_time span{
+    margin-left: 2rem;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: aqua;
+} 
+
+.provider_contact{
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    flex-direction: row;
+    margin-top: .3rem;
+}
+
+.call{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #DFDDD6;
+}
+
+.chat{
+    margin-left: 1rem;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #DFDDD6;
+}
+
+.icons{
+    padding-left:15px;
+}
+
+/* provider_center */
+
+.provider_center{
+    margin-top: 1rem;
+}
+
+.btn{
+    width: 93%;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.provider_loctions{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: .5rem;
+}
+
+
+.address{
+    font-size: 15px;
+    font-weight: 700;
+}
+.detect{
+    float: right;
+    font-size: 13px;
+    color: rgba(0, 0, 255, 0.534);
+}
+.crosshairs{
+    color: black;
+    padding-left: .4rem;
+}

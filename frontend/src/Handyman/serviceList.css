@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.service{
+    background-color:white;
+}
+
+.service_btn{
+    border: none;
+    width: 100%;
+    margin-top: .5rem;
+    background: #F0EFEC;
+    height: 160px;
+}
+
+.service_details{
+    margin-top: 0;
+}
+.provider_name{
+    float: left;
+}
+
+.service_list{
+    float: left;
+    margin-left: 10px;
+}
+.distance,.rating{
+    font-size: 14px;
+}
+.contact{
+    margin-left: 1.5rem;
+}
+
+.status{
+    padding-left: 1rem;
+}
+
+.comment{
+    padding-left: 2rem;
+}
+
+.distance,
+.items,.contact,.rating{
+    float: left;
+}
+.imgs{
+    float: right;
+    margin-right: .5rem;
+    margin-top: .5rem;
+}
+.imgs img{
+    width:130px;
+    height: 80px;
+}
+.items{
+    margin-top: 1rem;
+}
+
+.items span{
+    padding: .1rem;  
+    font-size: 15px; 
+}
