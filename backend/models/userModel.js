@@ -17,6 +17,7 @@ const userSchema = new mongoose.Schema({
     unique: true,
     required: true,
   },
+  
 });
 
 userSchema.post("save", (error, doc, next) => {

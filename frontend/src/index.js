@@ -6,13 +6,11 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 // import RegisterMaimCom from './loginCom/registerMainCom';
 import UserMainCom from './userProfile/userMainCom';
 import EditMainCom from './editCom/editMainCom';
+import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <MainComponent /> */}
-    {/* <RegisterMaimCom /> */}
-    {/* <UserMainCom /> */}
-    <EditMainCom />
+    <App></App>
   </React.StrictMode>
 );
 
