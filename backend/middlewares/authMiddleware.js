@@ -1,3 +1,6 @@
+const jwt = require("jsonwebtoken");
+const JWT_AUTH_TOKEN = process.env.JWT_AUTH_TOKEN;
+
 async function authenticateUser(req, res, next) {
   const accessToken = req.headers.cookie.split("=")[1].split(";")[0];
   console.log(accessToken);
@@ -22,4 +25,5 @@ async function authenticateUser(req, res, next) {
       return res.status(403).send({ err, msg: "User not authenticated" });
     }
   });
-}module.exports = authenticateUser;
+}
+module.exports = authenticateUser;

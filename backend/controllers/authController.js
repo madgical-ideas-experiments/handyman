@@ -3,11 +3,12 @@ const crypto = require("crypto");
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 dotenv.config();
-const cookieparser = require("cookie-parser");
 const JWT_AUTH_TOKEN = process.env.JWT_AUTH_TOKEN;
 const JWT_REFRESH_TOKEN = process.env.JWT_REFRESH_TOKEN;
 const smsKey = process.env.SMS_SECRET_KEY;
-const signupPost = async (req, res) => {
+//---------------------------------------------------------------//
+
+const signupCustomerPost = async (req, res) => {
   const { mobileNumber, name, email } = req.body;
   try {
     const mobileUser = await User.findOne({ mobileNumber });
@@ -36,6 +37,40 @@ const signupPost = async (req, res) => {
   }
 };
 
+//---------------------------------------------------------------//
+//signup seller
+const signupSellerPost = async (req, res) => {
+  const { mobileNumber, name, email, service } = req.body;
+  try {
+    const mobileUser = await User.findOne({ mobileNumber });
+    if (mobileUser) {
+      res.status(400).send({
+        message: "Mobile number already exists",
+      });
+    }
+    const emailUser = await User.findOne({ email });
+    if (emailUser) {
+      res.status(400).send({
+        message: "Email already exists",
+      });
+    }
+    const user = new User({
+      mobileNumber,
+      name,
+      email,
+      role: "seller",
+      service,
+    });
+    await user.save();
+    res.status(200).send({
+      message: "User created successfully",
+    });
+  } catch (err) {
+    res.status(400).send(err);
+  }
+};
+
+//---------------------------------------------------------------//
 let refreshTokens = [];
 //send otp
 const sendOTP_post = (req, res) => {
@@ -59,6 +94,9 @@ const sendOTP_post = (req, res) => {
   res.status(200).send({ phone, hash: fullHash, otp });
   //res.status(200).send({ phone, hash: fullHash }); // Use this way in Production
 };
+
+//---------------------------------------------------------------//
+
 const verifyOPT_post = async (req, res) => {
   const { phone, hash, otp } = req.body;
   let [hashValue, expires] = hash.split(".");
@@ -76,7 +114,7 @@ const verifyOPT_post = async (req, res) => {
   if (newCalculatedHash === hashValue) {
     console.log("user confirmed");
     const accessToken = jwt.sign({ data: phone }, JWT_AUTH_TOKEN, {
-      expiresIn: "7d",
+      expiresIn: "1d",
     });
     const refreshToken = jwt.sign({ data: phone }, JWT_REFRESH_TOKEN, {
       expiresIn: "1y",
@@ -105,22 +143,25 @@ const verifyOPT_post = async (req, res) => {
       .send({ msg: "Device verified" });
   }
 };
+
+//---------------------------------------------------------------//
 const refreshToken_post = async (req, res) => {
   const { refreshToken } = req.body;
+
   if (!refreshToken) {
     res.status(400).send({
       message: "No refresh token provided",
     });
-  }
-  if (!refreshTokens.includes(refreshToken)) {
+  } else {
+    /* if (!refreshTokens.includes(refreshToken)) {
     res.status(400).send({
       message: "Invalid refresh token",
-    });
-  } else {
+    }); 
+  } */
     jwt.verify(refreshToken, JWT_AUTH_TOKEN, (err, user) => {
       if (!err) {
         const accessToken = jwt.sign({ phone: user.phone }, JWT_AUTH_TOKEN, {
-          expiresIn: "1h",
+          expiresIn: "1d",
         });
         res
           .status(200)
@@ -140,6 +181,9 @@ const refreshToken_post = async (req, res) => {
     });
   }
 };
+
+//---------------------------------------------------------------//
+
 const logout_post = (req, res) => {
   res
     .clearCookie("refreshToken")
@@ -148,10 +192,16 @@ const logout_post = (req, res) => {
     .clearCookie("refreshTokenID")
     .send("logout");
 };
+
+
+
+
+
 module.exports = {
-  signupPost,
+  signupCustomerPost,
   sendOTP_post,
   verifyOPT_post,
   refreshToken_post,
   logout_post,
+  signupSellerPost,
 };
