@@ -2,7 +2,10 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const authRoutes = require("./routers/auth.js");
+const servicesRoutes = require("./routers/service.js");
+const userRoutes = require("./routers/user.js");
 const dotenv = require("dotenv");
+const authenticateUser = require("./middlewares/authMiddleware.js");
 dotenv.config();
 
 const app = express();
@@ -37,6 +40,8 @@ mongoose
   });
 //routes
 app.use("/api/auth", authRoutes);
-app.listen(4000, () => {
-  console.log("Server is running on port 4000");
+app.use("/api/service", authenticateUser, servicesRoutes);
+app.use("/api/user", authenticateUser, userRoutes);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

@@ -27,9 +27,9 @@ const userSchema = new mongoose.Schema({
     required: true,
     default: "none",
   },
-  loc: {
+  location: {
     type: [Number],
-    index: "2d",
+    index: "2dsphere",
   },
 });
 
