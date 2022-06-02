@@ -7,7 +7,7 @@ const {
 } = require("../controllers/servicController");
 
 router.get("/", getAllServices);
-roouter.get("/nearby", getAllnearbyServices);
+router.get("/nearby", getAllnearbyServices);
 router.get("/nearby/:service", getAllnearbyServicesByService);
 
 module.exports = router;
