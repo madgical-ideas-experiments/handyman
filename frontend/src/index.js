@@ -1,18 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import MainComponent from "./Handyman/mainCom";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
-// import RegisterMaimCom from './loginCom/registerMainCom';
-import UserMainCom from './userProfile/userMainCom';
-import EditMainCom from './editCom/editMainCom';
+import App from './App/App';
+import LoginMain from './App/LoginMain';
+import UserMenu from './App/UserMenu';
+import AppTest from './App/AppTest'
+
+import { BrowserRouter } from 'react-router-dom';
+
+import '../node_modules/font-awesome/css/font-awesome.min.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <MainComponent /> */}
-    {/* <RegisterMaimCom /> */}
-    {/* <UserMainCom /> */}
-    <EditMainCom />
+    {/* <App/> */}
+    {/* <LoginMain/> */}
+    {/* <UserMenu /> */}
+
+    <BrowserRouter >
+    <AppTest/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -1,0 +1,72 @@
+
+.order_div{
+    position: relative;
+    width: 98%;
+    height: 140px;
+    margin-left: .275rem;
+    background: #F0EFEC;
+    border: 3px solid #F0EFEC;
+    border-radius: 10px;
+    padding-left: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.names{
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    font-style: normal;
+}
+
+.staus{
+    font-size: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    color: #0FA958; 
+}
+
+.address_para{
+    font-style: normal;
+    font-weight: 200;
+    margin-left: .5rem;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000; 
+}
+
+.notice{
+    font-style: normal;
+    font-weight: 200;
+    font-family: 'Inter';
+    margin-left: .3rem;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.cancel_btn{
+    width: 80px;
+    height: 24px;
+    left: 50px;
+    margin-top: .5rem;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    background: #FB8181;
+    border-radius: 5px;  
+}
+
+.no_more{
+    width: 95%;
+    font-family: 'Inter';
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 1rem;
+}
