@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.headr_btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    line-height: 20px;
+    overflow-y: auto;
+}
+
+.card_body{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.items_list{
+    float: left;
+}
+
+.no_vender{
+    font-size: 15px;
+    float: left;
+    font-weight: 400;
+}
+
+.vender_msg{
+    padding-left: .4rem;
+    font-size: 15px;
+    float: left;
+    font-weight: 400;
+}

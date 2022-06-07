@@ -1,0 +1,125 @@
+import React, { useState} from 'react'
+import '../../Style/ComStyle/comanCss.css';
+import './serProvider.css';
+import { FaArrowLeft, FaBookmark, FaTimesCircle,FaPhoneAlt, FaCommentAlt, FaStar } from 'react-icons/fa';
+
+
+const ServiceProvider = (props) => {
+    const { goToServiceProvider,sendRequest} = props
+    const [aval, setAval] = useState(0);
+    const handleAvailable = () =>{
+        setAval(1);
+    }
+    const hideAvalItems = () =>{
+        setAval(0);
+    }
+
+    return (
+        <div className='header'>
+            <div className='main_provider'>
+                <div className='top_icons'>
+                    <span className='faArrowLefts'
+                    onClick={() =>goToServiceProvider()}><FaArrowLeft /></span>
+                    <span className='faBookmark'><FaBookmark /></span>
+                </div>
+                <div className='provider_details'>
+                    <div className="provider_name">Ram Lal Sabzivala</div>
+                    <div className="available">
+                        <div className="aval_status">Availability</div>
+                        <div className="aval_time">
+                            <span>8am-12am</span>
+                            <span>12pm-4pm</span>
+                            <span>4pm-8pm</span>
+                        </div>
+                    </div>
+                    <div className="rating">
+                        <FaStar /><FaStar /><FaStar /><FaStar />
+                    </div>
+                    <div className="provider_contact">
+                        <div className="call">
+                            <span>Call Now
+                                <span className="icons">
+                                    <FaPhoneAlt />
+                                </span>
+                            </span>
+                        </div>
+                        <div className="chat">
+                            <span>Chat
+                                <span className="icons"><FaCommentAlt /></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div className='btns'>
+                        <button className="btn btn-primary"
+                        onClick={handleAvailable}>
+                            Available items
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className='addres_div'>
+                <div className='add_para'>Address</div>
+                <div className='input_div'>
+                    <input
+                        type='text'
+                        name='house'
+                        value=''
+                        placeholder='House/Flat'
+                    />
+                </div>
+                <div className='input_div'>
+                    <input
+                        type='text'
+                        name='road'
+                        value=''
+                        placeholder='Road Name/Area/Colony'
+                    />
+                </div>
+                <div className='input_div text_area'>
+                    <input
+                        type='text'
+                        name='road'
+                        value=''
+                        placeholder='Road Name/Area/Colony'
+                    />
+                </div>
+                <div className='req_btns'>
+                    <button className='send_req'
+                    onClick={() =>sendRequest()}>
+                        Send Request
+                    </button>
+                </div>
+            </div>
+            {aval!== 0 ? 
+            <div className='all_items'>
+                <div className='faTimesCircle'>
+                    <span onClick={hideAvalItems}><FaTimesCircle /></span>
+                </div>
+                <div className='available_items'>
+                    <div className='frist_div'>
+                        <span className='items_div'>Items</span>
+                        <span className='price'>Price</span>
+                    </div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='mid_div'></div>
+                    <div className='last_div'></div>
+                </div>
+
+            </div>
+            : 
+            ''}
+        </div>
+    )
+}
+export default ServiceProvider
