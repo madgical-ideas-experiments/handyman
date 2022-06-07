@@ -1,0 +1,83 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.service{
+    background-color:white;
+}
+
+.find_location_service span{
+    line-height: 7px;
+}
+.service_btn{
+    border: none;
+    width: 100%;
+    margin-top: .5rem;
+    background: #F0EFEC;
+    height: 130px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.service_details{
+    margin-top: 0;
+}
+.provider_name{
+    float: left;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: none;
+}
+
+.service_list{
+    float: left;
+    margin-left: 10px;
+    line-height: 19px;
+}
+.distance,.rating{
+    font-size: 14px;
+}
+.contact{
+    color: white;
+    padding: .4rem;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.status{
+    padding-left: 1rem;
+}
+
+.comment,.faPhone{
+    padding-left: 1rem;
+    color: gray;
+}
+
+.distance,
+.items,.contact,.ratings{
+    float: left;
+    font-size: 13px;
+    color:black;
+}
+.imgs{
+    float: right;
+    margin-right: .5rem;
+    margin-top: .5rem;
+}
+.imgs img{
+    width:130px;
+    height: 80px;
+}
+.items{
+    margin-top: .7rem;
+    font-weight: 400;
+    font-style: none;
+}
+
+.items span{
+    padding: .1rem;  
+    font-size: 13px; 
+    font-weight: 400;
+}
