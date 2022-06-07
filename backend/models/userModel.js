@@ -17,6 +17,20 @@ const userSchema = new mongoose.Schema({
     unique: true,
     required: true,
   },
+  role: {
+    type: String,
+    required: true,
+    default: "customer",
+  },
+  service: {
+    type: String,
+    required: true,
+    default: "none",
+  },
+  location: {
+    type: [Number],
+    index: "2dsphere",
+  },
 });
 
 userSchema.post("save", (error, doc, next) => {
