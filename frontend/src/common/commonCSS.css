@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+}
+.absolute_center {
+  align-items: center;
+  justify-content: center;
+}
+.fit_screen {
+  width: 100vw;
+  height: 100vh;
+}
+.normal_border {
+  border: 1px solid #ccc;
+}
