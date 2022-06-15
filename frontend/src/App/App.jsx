@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { FaSearch, FaMapMarkerAlt, FaAlignJustify, FaArrowLeft, FaCommentAlt, FaHome } from 'react-icons/fa';
+import {FaAlignJustify, FaArrowLeft, FaCommentAlt, FaHome } from 'react-icons/fa';
 import Home from '../Pages/Home/Home';
 import Services from '../Pages/Service/Service';
 import ServiceProvider from '../Pages/Service/ServiceProvider';
 import Order from '../Pages/Order/order';
 
-import '../Style/ComStyle/comanCss.css';
+import ".././Style/commonStyle.css";
+
 import vegetable from "../images/vegetable.png";
 import water from "../images/water.png";
 import acRepair from "../images/acRepair.png";
@@ -67,7 +68,7 @@ const App = () => {
         <div className='main'>
           <div className='find_location_service'>
             <div className='find_search'>
-              <span><FaSearch /></span>
+              <img src={require('../images/search.png')} />
               <input type="text"
                 name='service'
                 value=''
@@ -75,7 +76,7 @@ const App = () => {
               />
             </div>
             <div className='find_search'>
-              <span><FaMapMarkerAlt /></span>
+            <img src={require('../images/carbon_location.png')} />
               <input type="text"
                 name='service'
                 value=''
@@ -100,7 +101,7 @@ const App = () => {
           <div className='find_location_service'>
               <span onClick={handleService}><FaArrowLeft /></span>
             <div className='find_search'>
-              <span><FaSearch /></span>
+            <img src={require('../images/search.png')} />
               <input type="text"
                 name='service'
                 value=''
@@ -108,7 +109,7 @@ const App = () => {
               />
             </div>
             <div className='find_search'>
-              <span><FaMapMarkerAlt /></span>
+            <img src={require('../images/carbon_location.png')} />
               <input type="text"
                 name='service'
                 value=''

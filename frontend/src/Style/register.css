@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Varela+Round&display=swap');
+
+
+:root{
+    --ff-Varela : 'Varela Round';
+    --ff-Inter: 'Inter';
+    --fs-normal : normal;
+
+    --fw-400 : 400;
+    --fw-300 : 300;
+ 
+    --fs-handyman : 32px;
+    --fs-title : 15px;
+    --fs-inputs : 15px;
+    --fs-account-title : 11px;
+
+
+    --clr-000 : #000000;
+    --clr-grey : #898989;
+
+    --bg-handyman : linear-gradient(89.81deg, #0081FF -2.6%, rgba(255, 0, 0, 0) 180.15%);
+    --bg-main-card : #D2F0FF;
+    --bg-card : #FFFFFF;
+    --btn-bg-primary : #1A81F2;
+
+
+    --br-primary : 1px solid #1A81F2;
+    --br-grey : 1px solid #DFDDD6;
+    --br-dark-grey : 1px solid #898888;
+    --br-3px : 3px solid #F0EFEC;
+    --border-10px : 10px;
+  }
+
+
+  /* Register component */
+
+.main_card{
+    min-height: 100vh;
+    background: var(--bg-main-card);
+    display: grid;
+    place-items: center;
+}    
+
+.card{
+    box-sizing: border-box;
+    width:min(80vw,350px);
+    min-height: 500px;
+    background: var(--bg-card);
+    border: var(--br-3px);
+    border-radius: var(--border-10px );
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.handyman{
+    margin-top:1.5rem;
+    width: 100%;
+}
+
+
+.handyman_title{
+    background: var(--bg-handyman);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: var(--ff-Varela);
+    font-style: var(--fs-normal); 
+    font-weight: var(--fw-400);
+    font-size: var(--fs-handyman);
+}
+
+.description-text{
+    font-family: var(--ff-Varela);
+    font-style: var(--fs-normal);
+    font-weight: var(--fw-400);
+    font-size: var(--fs-title);
+    color: var(--clr-000);
+    line-height: .2rem; 
+}
+
+
+.register{
+    margin-top: 2rem;
+    line-height: .2rem;
+}
+
+.register_title{
+    font-family: var(--ff-Inter);
+    margin-top: 2.5rem;
+    font-style: var(--fs-normal);
+    font-weight: var(--fw-300);
+    font-size: var(--fs-title);
+    color: var(--clr-000);
+}
+
+.register_input{
+    border: var(--br-grey);
+    border-radius: var(--border-10px);
+    width: 100%;
+    height: 46px;
+}
+.register_input input{
+    width: 80%;
+    padding-left: 10px;
+    border-radius: var(--border-10px);
+    height: 44px;
+    font-family: var(--ff-Inter);
+    font-size: var(--fs-inputs);
+    font-weight: var(--fw-300);
+    font-style: var(--fs-normal);
+    border: none;
+    outline: none;
+    color: var(--clr-grey);
+}
+
+.country_code{
+    font-family: var(--ff-Inter);
+    font-size: var(--fs-inputs);
+    font-weight: var(--fw-300);
+    font-style: var(--fs-normal);
+    color: var(--clr-grey);
+    padding-left: 10px;
+}
+.have_account{
+    font-family:  var(--ff-Inter);
+    font-style: var(--fs-normal);
+    font-weight: var(--fw-300);
+    font-size: var(--fs-account-title);
+    line-height: 35px;
+}
+
+.have_account button{
+    border: none;
+    outline: none;
+    color: #0081FF;
+    margin-left: .3rem;
+    background-color: var(--bg-card);
+    cursor: pointer;
+}
+
+/* Get otp sections */
+.get_otp{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 1.5rem;
+    place-items: center;
+}
+
+.otp input{
+    box-sizing: border-box;
+    width: 45px;
+    height: 54px;
+    border-radius: var(--border-10px);
+    font-family:  var(--ff-Inter);
+    font-style: var(--fs-normal);
+    font-weight: var(--fw-300);
+    font-size: var(--fs-inputs);
+    outline: none;
+    text-align: center;
+    color: var(--clr-000);
+    border: var(--br-dark-grey);
+}
+
+.verified{
+    font-family:  var(--ff-Inter);
+    font-style: var(--fs-normal);
+    font-weight: var(--fw-300);
+    font-size: var(--fs-title);
+    color: var(--clr-000);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+/* Login Pages Input */
+
+
+.title{
+    font-family:  var(--ff-Inter);
+    font-style: var(--fs-normal);
+    font-weight: var(--fw-300);
+    font-size: var(--fs-title);
+    margin-top: 3.5rem;
+}
+
+.login_input input{
+    width: 100%;
+    height: 46px;
+    padding-left: .7rem;
+    margin-top: .5rem;
+    outline: none;
+    font-family: var(--ff-Inter);
+    font-style: var(--fs-normal);
+    font-weight: var(--fw-300);
+    font-size: var(--fs-inputs);
+    color: var(--clr-grey);
+    background: var( --bg-card);
+    border: var(--br-dark-grey);
+    border-radius:var(--border-10px);
+}
+
+
+/* button */
+
+.continue_btn{
+    position: relative;
+}
+
+.btn_primary{
+    position: absolute;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    font-family: var(--ff-Inter);
+    font-style: var(--fs-normal);
+    font-weight:var(--fw-400);
+    font-size: var(--fs-title);
+    color: #FFFFFF;
+    margin-top: 3.5rem;
+    background: var(--btn-bg-primary);
+    border: 1px solid #1A81F2;
+    border-radius: var(--border-10px);
+    cursor: pointer;
+}

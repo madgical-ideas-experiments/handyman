@@ -1,61 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.user_mobile,
-.user_location{
-    margin-top: 1rem;
-}
-
-.provider_names input,
-.user_mobile input{
-    width:95%;
-    height: 35px;
-    padding-left: 5px;
-    background-color: #ffff;
-    border: 1px solid #C2C0C0;
-    outline: none;
-    font-size: 15px;
-    font-weight: 500;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 .user_location{
     width: 95%;
-    height: 35px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    color: #000000;
+    border-radius: 5px;
+    margin-top: 1rem;
     border: 1px solid #C2C0C0;
 }
 
 .user_location input{
     width: 70%;
     height: 30px;
-    padding-left: 5px;
+    padding-left: 9px;
     border:none;
+    color: #000000;
     outline: none;
-    font-size: 15px;
-    font-weight: 500;
 }
 
 .add_location{
     cursor: pointer;
     font-size: 20px;
     float: right;
+    font-weight: 300;
     margin-right: 1.5rem;
 }
 
 .add_btn{
     margin-top: .4rem;
-    font-size: 13px;
+    font-size: 15px;
     color: black;
-    font-weight: 500;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
 }
 .choose_category{
     position: relative;
-    min-width: 50px;
-    max-width: 210px;
-    top:60px;
-    font-size: 15px;
-    font-weight: 500;
+    /* min-width: 50px;
+    max-width: 210px; */
+    top:40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
 }
 
 .add_more_service {
@@ -76,7 +68,7 @@
     position: relative;
     width: 95%;
     height: 200px;
-    top:70px;
+    top:60px;
     display: grid;
     grid-template-columns: 
         100px 100px 100px;
@@ -111,15 +103,19 @@
     width: 84px;
     height: 80px;
     padding-left: .1rem;
-    /* background-color: #B8EDDD; */
     border-radius: 50%;
 }
 
 
 .repair_div p,.veg_div p,.gassStove_div p,.water_div p,.gassStove_div p,
 .second_last_div p,.last_div p{
-    font-size: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
     text-align: center;
+    color: #000000;
 }
 
 .repair_div ,.gassStove_div {
@@ -145,16 +141,25 @@
     background: #FFFFFF;
     border: 1px solid #C2C0C0;
     border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .time_zone{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
     padding:.3rem;
     border-bottom: 1px solid #C2C0C0;
 }
 .socity{
-    font-size: 14px;
-    font-weight: 500;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
     padding: .5rem;
+    color: #000000
 }
 
 .minimise_address{
@@ -168,20 +173,17 @@
     cursor: pointer;
 }
 
-.find_Locations{
-    position: relative;
+.location_div img {
+    margin-top: .5rem;
     float: right;
-    margin-right:1.5rem;
-    font-size:15px;
-    top: 1px;
+    margin-right:1.3rem;
+    font-size:10px;
     color: black;
     cursor: pointer;
 }
 
-
 .morning_time{
     margin-left:1rem;
-    font-size: 12px;
     padding: .1rem;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -210,8 +212,11 @@
 }
 
 .avail_location{
-    color: rgba(0, 0, 0, 0.562);
-    font-size: 14px;
-    font-weight: 500;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #898989;
     margin-left: .5rem;
 }

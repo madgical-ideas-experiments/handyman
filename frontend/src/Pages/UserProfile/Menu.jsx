@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Style/ComStyle/comanCss.css';
+import '../../Style/commonStyle.css';
 import './menu.css'
 import { FaArrowLeft, FaUserPlus, FaListUl, FaPowerOff } from 'react-icons/fa';
 

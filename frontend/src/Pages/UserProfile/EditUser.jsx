@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Style/ComStyle/comanCss.css';
+import '../../Style/commonStyle.css';
 import './editUser.css';
 import {FaUserPlus,FaEdit} from 'react-icons/fa';
 

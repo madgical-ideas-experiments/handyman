@@ -1,11 +1,12 @@
 import React from 'react'
-import '../../Style/ComStyle/comanCss.css';
+import '../../Style/commonStyle.css';
+
 import "./addService.css";
 import { FaArrowLeft } from 'react-icons/fa';
 
 const AddService = (props) => {
 
-    const { backToCreateService } = props;
+    const { backToCreateService,handleAddService } = props;
 
     return (
         <div className='service_header'>
@@ -22,14 +23,14 @@ const AddService = (props) => {
                         placeholder="Add name to your service"
                     />
                 </div>
-                <div className="add_service_img">
-                    <span>Add Images</span>
-                    <div className="all_images">
-                        <div className="add_images">+</div>
-                        <div className="add_images">+</div>
-                        <div className="add_images">+</div>
-                    </div>
+
+                <p className='add_Para'>Add Images</p>
+                <div className="all_images">
+                    <div className="add_images">+</div>
+                    <div className="add_images">+</div>
+                    <div className="add_images">+</div>
                 </div>
+
                 <div className="check_available_items">
                     <span className="available_item">Add available items</span>
                     <div className="items_price">
@@ -52,16 +53,16 @@ const AddService = (props) => {
                         <div className="table_data">
                             <span>+</span>
                         </div>
-                        <div className="table_data">
-                            <span>+</span>
-                        </div>
-                        <div className="table_data">
-                            <span>+</span>
-                        </div>
                         <div className="table_data_last">
                             <span>+</span>
                         </div>
                     </div>
+                </div>
+
+                <div className='provider_btns'>
+                    <button 
+                    onClick={() => handleAddService()}>
+                    Continue</button>
                 </div>
             </div>
         </div>
