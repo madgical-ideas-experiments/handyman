@@ -2,8 +2,8 @@ import React from 'react'
 import '../../Style/register.css';
 
 
-const CreatePass = (props) => {
-    const {handleUserLogin}  = props;
+const Login = (props) => {
+    const {goToCreateService} = props;
 
     return (
         <div className='main_card'>
@@ -12,38 +12,29 @@ const CreatePass = (props) => {
                     <div className="handyman_title">handyman</div>
                     <div className="description-text">Services, anytime, anywhere</div>
                 </div>
-                
-                <div className='title'>Welcome!</div>
-                <div className="login_input">
-                    
-                    <input type="text"
-                        name="name"
-                        value=""
-                        placeholder="Create a username"
-                    />
-                </div>
 
+                <div className='title'>Hi!</div>
                 <div className="login_input">
-                    <input type="password"
-                        name="password"
+                    <input type="text"
+                        name="customer"
                         value=""
-                        placeholder="Enter password"
+                        placeholder="Login as a customer"
                     />
                 </div>
                 <div className="login_input">
                     <input type="text"
-                        name="name"
+                        name="customer"
                         value=""
-                        placeholder="confirm Password"
+                        placeholder="Login as a service provider" 
                     />
                 </div>
                 <div className="continue_btn">
                     <button className="btn_primary"
-                        onClick={() => handleUserLogin()}>Continue</button>
+                    onClick={() => goToCreateService()}>Continue</button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default CreatePass
+export default Login;

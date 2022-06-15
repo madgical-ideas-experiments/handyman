@@ -1,17 +1,20 @@
 import React from 'react';
 import './home.css';
+import '../../Style/commonStyle.css';
+
 const Home = (props) => {
 
   const {Categories} = props;
   const{items,numberOfVender,message,img} = Categories
   return (
-    <button className='headr_btn'
+    <div className='service_category_list'
+    onClick={()=>props.handleHome()}
     style={{ 
       backgroundImage: `url(`+img+`)`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat', 
-    }}
-    onClick={()=>props.handleHome()}>
+    }}>
+    
         <div className='card_body'>
             <div className="card_items">
                 <div className="items_list">{items}</div>
@@ -22,7 +25,8 @@ const Home = (props) => {
             </div>
         </div>
         
-    </button>
+    
+    </div>
   )
 }
 
