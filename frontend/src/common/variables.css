@@ -1,3 +1,33 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Varela+Round&display=swap');
 
-}
+
+:root{
+    --ff-Varela : 'Varela Round';
+    --ff-Inter: 'Inter';
+    --fs-normal : normal;
+
+    --fw-400 : 400;
+    --fw-300 : 300;
+ 
+    --fs-handyman : 32px;
+    --fs-title : 16px;
+    --fs-inputs : 16px;
+    --fs-account-title : 11px;
+
+
+    --clr-000 : #000000;
+    --clr-grey : #898989;
+
+    --bg-handyman : linear-gradient(89.81deg, #0081FF -2.6%, rgba(255, 0, 0, 0) 180.15%);
+    --bg-main-card : #D2F0FF;
+    --bg-card : #FFFFFF;
+    --btn-bg-primary : #1A81F2;
+
+
+    --br-primary : 1px solid #1A81F2;
+    --br-grey : 1px solid #DFDDD6;
+    --br-dark-grey : 1px solid #898888;
+    --br-3px : 3px solid #F0EFEC;
+    --border-10px : 10px;
+  }
