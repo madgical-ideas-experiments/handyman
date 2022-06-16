@@ -11,8 +11,8 @@
     --fw-300 : 300;
  
     --fs-handyman : 32px;
-    --fs-title : 15px;
-    --fs-inputs : 15px;
+    --fs-title : 16px;
+    --fs-inputs : 16px;
     --fs-account-title : 11px;
 
 
@@ -77,18 +77,18 @@
     font-weight: var(--fw-400);
     font-size: var(--fs-title);
     color: var(--clr-000);
-    line-height: .2rem; 
+    line-height: .5rem; 
 }
 
 
-.register{
-    margin-top: 2rem;
-    line-height: .2rem;
+.items{
+
+    margin-top: 4rem;
+    /* line-height: 35px; */
 }
 
-.register_title{
+.title{
     font-family: var(--ff-Inter);
-    margin-top: 2.5rem;
     font-style: var(--fs-normal);
     font-weight: var(--fw-300);
     font-size: var(--fs-title);
@@ -100,6 +100,7 @@
     border-radius: var(--border-10px);
     width: 100%;
     height: 46px;
+    margin-top: .5rem;
 }
 .register_input input{
     width: 80%;
@@ -121,14 +122,14 @@
     font-weight: var(--fw-300);
     font-style: var(--fs-normal);
     color: var(--clr-grey);
-    padding-left: 10px;
+    margin-left: .7rem;
 }
 .have_account{
     font-family:  var(--ff-Inter);
     font-style: var(--fs-normal);
     font-weight: var(--fw-300);
     font-size: var(--fs-account-title);
-    line-height: 35px;
+    margin-top: .5rem; 
 }
 
 .have_account button{
@@ -144,7 +145,7 @@
 .get_otp{
     display:grid;
     grid-template-columns: auto auto auto auto;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     place-items: center;
 }
 
@@ -177,15 +178,9 @@
 /* Login Pages Input */
 
 
-.title{
-    font-family:  var(--ff-Inter);
-    font-style: var(--fs-normal);
-    font-weight: var(--fw-300);
-    font-size: var(--fs-title);
-    margin-top: 3.5rem;
-}
-
-.login_input input{
+.login_input input,
+.password_input input,
+.signin_input input{
     width: 100%;
     height: 46px;
     padding-left: .7rem;

@@ -11,8 +11,8 @@ const RegisterPage = (props) => {
                     <div className="handyman_title">handyman</div>
                     <div className="description-text">Services, anytime, anywhere</div>
                 </div>
-                <div className="register">
-                    <p className="register_title">Register here</p>
+                <div className="items">
+                    <lable className="title">Register here</lable>
                     <div className="register_input">
                         <span className="country_code">+91</span>
                         <input type="text"
@@ -22,9 +22,9 @@ const RegisterPage = (props) => {
                             required
                         />
                     </div>
-                    <p className="have_account">Already have an account?
+                    <div className="have_account">Already have an account?
                         <button onClick={() => handlesignIn()}>Login in here</button>
-                    </p>
+                    </div>
                 </div>
                 <div className="continue_btn">
                     <button className="btn_primary"
