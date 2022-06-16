@@ -2,8 +2,8 @@ import React from 'react'
 import '../../Style/register.css';
 
 
-const CreatePass = (props) => {
-    const { handleUserLogin } = props;
+const Login = (props) => {
+    const { goToCreateService } = props;
 
     return (
         <div className='main_card'>
@@ -14,38 +14,29 @@ const CreatePass = (props) => {
                 </div>
 
                 <div className='items'>
-                    <label className='title'>Welcome!</label>
-                    <div className="password_input">
-
+                    <label className='title'>Hi!</label>
+                    <div className="login_input">
                         <input type="text"
-                            name="name"
+                            name="customer"
                             value=""
-                            placeholder="Create a username"
+                            placeholder="Login as a customer"
                         />
                     </div>
-
-                    <div className="password_input">
-                        <input type="password"
-                            name="password"
-                            value=""
-                            placeholder="Enter password"
-                        />
-                    </div>
-                    <div className="password_input">
+                    <div className="login_input">
                         <input type="text"
-                            name="name"
+                            name="customer"
                             value=""
-                            placeholder="confirm Password"
+                            placeholder="Login as a service provider"
                         />
                     </div>
                 </div>
                 <div className="continue_btn">
                     <button className="btn_primary"
-                        onClick={() => handleUserLogin()}>Continue</button>
+                        onClick={() => goToCreateService()}>Continue</button>
                 </div>
             </div>
         </div>
     )
 }
 
-export default CreatePass
+export default Login;

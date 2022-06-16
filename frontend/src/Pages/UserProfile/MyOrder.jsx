@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Style/ComStyle/comanCss.css';
+import '../../Style/commonStyle.css';
 import { FaArrowLeft, FaCheck, FaStar } from 'react-icons/fa';
 import './myOrder.css';
 

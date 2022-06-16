@@ -1,17 +1,4 @@
-
-.order_div{
-    position: relative;
-    width: 98%;
-    height: 140px;
-    margin-left: .275rem;
-    background: #F0EFEC;
-    border: 3px solid #F0EFEC;
-    border-radius: 10px;
-    padding-left: .5rem;
-    display: flex;
-    flex-direction: column;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 
 .names{

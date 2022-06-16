@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 801px;
+    background-color: white;
+}
+
+.main{
+    position: absolute;
+    width: 95%;
+    height: 801px;
+    background-color:white;
+    display: flex;
+    margin-left:.6rem;
+    margin-right: .5rem;
+    flex-direction: column;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    background: white;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.fa_icons{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 25px;
+}
+
+
+.find_search{
+    box-sizing: border-box;
+    margin-top: .8rem;
+    width: 100%;
+    height: 39px;
+    background: #FFFFFF;
+    border: 0.5px solid #676565;
+    border-radius: 5px;
+}
+.find_search img{
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.find_search input{
+    font-family: 'Inter';
+    font-style: normal;
+    border: none;
+    outline: none;
+    margin-left:.5rem;
+    padding: .4rem;
+    background-color:white;
+    width: 80%;
+    height: 35px;
+    font-size: 18px;
+    color: #989898;
+    font-weight: 300;
+}
+
+.category{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 18px;
+    color: #000000;
+}
+
+
+/* map_service */
+
+.map_service{
+    overflow-y: auto;
+}
+
+
+
+/* Order style */
+
+.main_order,
+.order_para{
+    margin-left:.5rem;
+    font-size:16px;
+    font-weight: 500;
+}
+
+
+
+/* Create service  */
+
+.service_header{
+    position: relative;
+    width: 100%;
+    height: 730px;
+    background-color: white;
+}
+
+.service_main{
+    position: absolute;
+    width: 95%;
+    top:20px;
+    margin-left: 1.19rem;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* MyOrder and MyService style */
+
+.myOrder_myService{
+    position: absolute;
+    width: 100%;
+    top:8px
+}
+
+
+
+/* service Provider */
+
+.add_service_input input{
+    width: 95%;
+    height: 40px;
+    padding-left: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 1rem;
+    color: #898989;
+    background: #FFFFFF;
+    border: 1px solid #898888;
+    border-radius: 5px;
+}
+
+
+
+
+.provider_btns{
+    width: 100%;
+    place-content: center;
+}
+.provider_btns button{
+    position: absolute;
+    box-sizing: border-box;
+    width: 95%;
+    height: 46px;
+    top: 620px;
+    background: #1A81F2;
+    border: 1px solid #1A81F2;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+/* Order title */
+.errow_title{
+    padding: .5rem;
+}
+.order_para{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: .5rem;
+    color: #000000;
+}
+
+.orders_div{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background: #F0EFEC;
+    border: 3px solid #F0EFEC;
+    display: flex;
+    flex-direction: column;
+}

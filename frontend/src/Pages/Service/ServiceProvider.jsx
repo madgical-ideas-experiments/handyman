@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
-import '../../Style/ComStyle/comanCss.css';
-import './serProvider.css';
+import '../../Style/commonStyle.css';
+import './serviceProvider.css';
 import { FaArrowLeft, FaBookmark, FaTimesCircle,FaPhoneAlt, FaCommentAlt, FaStar } from 'react-icons/fa';
 
 
@@ -20,7 +20,9 @@ const ServiceProvider = (props) => {
                 <div className='top_icons'>
                     <span className='faArrowLefts'
                     onClick={() =>goToServiceProvider()}><FaArrowLeft /></span>
-                    <span className='faBookmark'><FaBookmark /></span>
+                    <span className='faBookmark'>
+                        <img src={require('../../images/bookmark.png')} />
+                    </span>
                 </div>
                 <div className='provider_details'>
                     <div className="provider_name">Ram Lal Sabzivala</div>
@@ -38,19 +40,17 @@ const ServiceProvider = (props) => {
                     <div className="provider_contact">
                         <div className="call">
                             <span>Call Now
-                                <span className="icons">
-                                    <FaPhoneAlt />
-                                </span>
+                                <img className='call_img' src={require('../../images/call.png')} />
                             </span>
                         </div>
                         <div className="chat">
                             <span>Chat
-                                <span className="icons"><FaCommentAlt /></span>
+                                <img className='chat_img' src={require('../../images/chat.png')} />
                             </span>
                         </div>
                     </div>
                     <div className='btns'>
-                        <button className="btn btn-primary"
+                        <button className="aval_btn"
                         onClick={handleAvailable}>
                             Available items
                         </button>
@@ -58,7 +58,12 @@ const ServiceProvider = (props) => {
                 </div>
             </div>
             <div className='addres_div'>
-                <div className='add_para'>Address</div>
+                <div className='add_para'>
+                    <span>Address</span>
+                    <span className='auto_para'>Auto Detect 
+                        <img src={require('../../images/location.png')} />
+                    </span>
+                </div>
                 <div className='input_div'>
                     <input
                         type='text'
@@ -80,7 +85,7 @@ const ServiceProvider = (props) => {
                         type='text'
                         name='road'
                         value=''
-                        placeholder='Road Name/Area/Colony'
+                        placeholder='Write a message...'
                     />
                 </div>
                 <div className='req_btns'>

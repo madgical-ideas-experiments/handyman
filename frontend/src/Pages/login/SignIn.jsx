@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 import '../../Style/register.css';
 
 
-const CreatePass = (props) => {
+const SignIn = (props) => {
+
     const { handleUserLogin } = props;
 
     return (
@@ -14,24 +15,23 @@ const CreatePass = (props) => {
                 </div>
 
                 <div className='items'>
-                    <label className='title'>Welcome!</label>
-                    <div className="password_input">
-
+                    <label className="title">Welcome!</label>
+                    <div className="signin_input">
                         <input type="text"
                             name="name"
                             value=""
-                            placeholder="Create a username"
+                            placeholder="Enter username"
                         />
                     </div>
 
-                    <div className="password_input">
+                    <div className="signin_input">
                         <input type="password"
                             name="password"
                             value=""
                             placeholder="Enter password"
                         />
                     </div>
-                    <div className="password_input">
+                    <div className="signin_input">
                         <input type="text"
                             name="name"
                             value=""
@@ -48,4 +48,4 @@ const CreatePass = (props) => {
     )
 }
 
-export default CreatePass
+export default SignIn;

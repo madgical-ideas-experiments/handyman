@@ -1,24 +1,22 @@
 import React,{useState} from 'react';
-import '.././Style/ComStyle/comanCss.css';
+import ".././Style/commonStyle.css";
+
 import RegisterPage from '../Pages/login/RegisterPage';
 import GetOtp from '../Pages/login/GetOtp';
-import CreateUser from '../Pages/login/CreateUser';
+import Login from '../Pages/login/Login';
 import CreatePass from '../Pages/login/CreatePass';
 import CreateServices from '../Pages/Service/CreateServices';
 import AddService from '../Pages/Service/AddService';
+import SignIn from '../Pages/login/SignIn';
 
 const LoginMain = () => {
 
-    const [state, setstate] = useState(0)
+    const [state, setstate] = useState(0);
+    const [initial, setfinal]  = useState(0);
 
     const handleRegister = () =>{
         setstate(1);
     }
-
-    const handleLoginHere = () =>{
-
-    }
-
     const gotoCreateUser = () => {
       setstate(2);
     }
@@ -37,12 +35,16 @@ const LoginMain = () => {
    const backToCreateService = () =>{
     setstate(4);
    }
+
+   const handlesignIn = () =>{
+    setfinal(1)
+   }
   return (
     <>
     {
         state === 0 ?
         <RegisterPage 
-        handleLoginHere = {handleLoginHere}
+        handlesignIn = {handlesignIn}
         handleRegister={handleRegister}/>
         :
         state === 1 ? 
@@ -50,13 +52,14 @@ const LoginMain = () => {
         gotoCreateUser={gotoCreateUser}
         />
         : state === 2 ?
-        <CreateUser
-        handleUserLogin={handleUserLogin}/>
+        <CreatePass 
+        handleUserLogin={handleUserLogin}
+        />
         :
         state === 3 ?
-        <CreatePass 
+        <Login
         goToCreateService={goToCreateService}
-        />
+       />
         :
         state === 4 ?
         <CreateServices 
@@ -65,7 +68,6 @@ const LoginMain = () => {
         <AddService 
         backToCreateService={backToCreateService}/>
     }
-      
     </>
   )
 }

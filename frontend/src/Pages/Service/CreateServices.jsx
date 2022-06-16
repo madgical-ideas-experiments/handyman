@@ -1,38 +1,37 @@
-import React, {useState} from 'react'
-import '../../Style/ComStyle/comanCss.css';
+import React, { useState } from 'react'
+import '../../Style/commonStyle.css';
 import './createService.css';
-import {FaCrosshairs} from 'react-icons/fa';
 
 const CreateServices = (props) => {
 
     const [state, setstate] = useState(0);
 
-    const handleLocation = () =>{
+    const handleLocation = () => {
         setstate(1);
     }
-    const minimisLocation = () =>{
+    const minimisLocation = () => {
         setstate(0);
     }
 
-    const {handleAddService} = props;
+    const { handleAddService } = props;
     return (
         <div className='service_header'>
             <div className='service_main'>
-                
-                <div className="provider_names">
+
+                <div className="add_service_input">
                     <input type="text"
                         name="username"
                         value=""
                         placeholder="Service provider name"
-                        
+
                     />
                 </div>
-                <div className="user_mobile">
+                <div className="add_service_input">
                     <input type="number"
                         name="mobileNumber"
                         value=""
                         placeholder="Enter your mobile number"
-                        
+
                     />
                 </div>
                 <div className="user_location">
@@ -65,7 +64,9 @@ const CreateServices = (props) => {
 
                             <div className="location_div">
                                 <span className="avail_location">Add Location</span>
-                                <span className="find_Locations"> <FaCrosshairs /></span>
+
+                                <img src={require('../../images/location.png')} />
+
                                 <div className="second_time_zone">
                                     <span className="second_time_slot">8am-12pm</span>
                                     <span className="time_slot">12pm-4pm</span>
@@ -76,43 +77,43 @@ const CreateServices = (props) => {
 
                     </React.Fragment>
                 }
-            
+
                 <div className="choose_category">
                     Choose your service from the available categories
                 </div>
                 <div className="service_category">
                     <div className="repair_div">
-                        <img src={require('../../images/repairSer.png')} 
-                        alt="repair"  onClick={() => handleAddService()} />
+                        <img src={require('../../images/repairSer.png')}
+                            alt="repair" />
                         <p>Repair service</p>
                     </div>
 
                     <div className="veg_div">
-                        <img src={require('../../images/vegSer.png')} 
-                        alt="repair"  onClick={() => handleAddService()} />
+                        <img src={require('../../images/vegSer.png')} alt="repair" />
                         <p>Vegitables Seller</p>
                     </div>
 
                     <div className="water_div">
-                        <img src={require('../../images/waterSer.png')} 
-                        alt="repair"  onClick={() => handleAddService()} />
+                        <img src={require('../../images/waterSer.png')} alt="repair" />
                         <p>RO Water Supply</p>
                     </div>
                     <div className="gassStove_div">
-                        <img src={require('../../images/gassSer.png')} 
-                        alt="repair"  onClick={() => handleAddService()} />
+                        <img src={require('../../images/gassSer.png')} alt="repair" />
                         <p>Gass Stove Repair</p>
                     </div>
                     <div className="second_last_div">
-                        <img src={require('../../images/acSer.jpg')} alt="repair" 
-                        onClick={() => handleAddService()} />
+                        <img src={require('../../images/acSer.jpg')} alt="repair" />
                         <p>AC Repair</p>
                     </div>
                     <div className="last_div">
-                        <img src={require('../../images/repairSer.png')} 
-                        alt="repair"  onClick={() => handleAddService()} />
+                        <img src={require('../../images/repairSer.png')} alt="repair" />
                         <p>Repair service</p>
                     </div>
+                </div>
+                <div className='provider_btns'>
+                    <button
+                        onClick={() => handleAddService()}>
+                        Continue</button>
                 </div>
             </div>
         </div>
