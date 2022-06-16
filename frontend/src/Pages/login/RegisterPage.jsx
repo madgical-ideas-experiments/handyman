@@ -6,8 +6,8 @@ const RegisterPage = (props) => {
     const { handleRegister, handlesignIn } = props;
     return (
         <div className='main_card'>
-            <div className='card'>
-                <div className="handyman">
+            <div className='card '>
+                <div className="handyman flex flex-col">
                     <div className="handyman_title">handyman</div>
                     <div className="description-text">Services, anytime, anywhere</div>
                 </div>

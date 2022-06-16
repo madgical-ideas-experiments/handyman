@@ -12,11 +12,10 @@ import Services from "../Pages/Service/Service";
 import ServiceProvider from "../Pages/Service/ServiceProvider";
 import Order from "../Pages/Order/order";
 
-import "../Style/commonStyle.css";
-import vegetable from "../images/vegetable.png";
-import water from "../images/water.png";
 import acRepair from "../images/acRepair.png";
 import gasStove from "../images/gasStove.png";
+import vegetable from "../images/vegetable.png";
+import water from "../images/water.png";
 
 import img1 from "../images/img1.png";
 import img2 from "../images/img2.png";

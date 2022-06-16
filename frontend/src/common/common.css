@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
 }
+.flex-col{
+  flex-direction: column;
+}
 .fit_screen {
   width: 100vw;
   height: 100vh;
