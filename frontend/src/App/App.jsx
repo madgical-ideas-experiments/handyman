@@ -12,7 +12,7 @@ import Services from "../Pages/Service/Service";
 import ServiceProvider from "../Pages/Service/ServiceProvider";
 import Order from "../Pages/Order/order";
 
-import "../Style/ComStyle/comanCss.css";
+/* import "../Style/ComStyle/comanCss.css"; */
 import vegetable from "../images/vegetable.png";
 import water from "../images/water.png";
 import acRepair from "../images/acRepair.png";
