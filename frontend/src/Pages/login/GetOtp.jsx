@@ -12,11 +12,12 @@ const GetOtp = (props) => {
                     <div className="handyman_title">handyman</div>
                     <div className="description-text">Services, anytime, anywhere</div>
                 </div>
-                <div className="register">
-                    <p className="register_title">Register here</p>
+
+                <div className="items">
+                    <label className="title">Register here</label>
                     <div className="register_input">
                         <span className="country_code">+91</span>
-                        <input type="number"
+                        <input type="text"
                             name="phone"
                             value=''
                             placeholder="12345678"

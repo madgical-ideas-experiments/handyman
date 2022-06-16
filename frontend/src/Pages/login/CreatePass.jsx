@@ -3,7 +3,7 @@ import '../../Style/register.css';
 
 
 const CreatePass = (props) => {
-    const {handleUserLogin}  = props;
+    const { handleUserLogin } = props;
 
     return (
         <div className='main_card'>
@@ -12,30 +12,32 @@ const CreatePass = (props) => {
                     <div className="handyman_title">handyman</div>
                     <div className="description-text">Services, anytime, anywhere</div>
                 </div>
-                
-                <div className='title'>Welcome!</div>
-                <div className="login_input">
-                    
-                    <input type="text"
-                        name="name"
-                        value=""
-                        placeholder="Create a username"
-                    />
-                </div>
 
-                <div className="login_input">
-                    <input type="password"
-                        name="password"
-                        value=""
-                        placeholder="Enter password"
-                    />
-                </div>
-                <div className="login_input">
-                    <input type="text"
-                        name="name"
-                        value=""
-                        placeholder="confirm Password"
-                    />
+                <div className='items'>
+                    <label className='title'>Welcome!</label>
+                    <div className="password_input">
+
+                        <input type="text"
+                            name="name"
+                            value=""
+                            placeholder="Create a username"
+                        />
+                    </div>
+
+                    <div className="password_input">
+                        <input type="password"
+                            name="password"
+                            value=""
+                            placeholder="Enter password"
+                        />
+                    </div>
+                    <div className="password_input">
+                        <input type="text"
+                            name="name"
+                            value=""
+                            placeholder="confirm Password"
+                        />
+                    </div>
                 </div>
                 <div className="continue_btn">
                     <button className="btn_primary"

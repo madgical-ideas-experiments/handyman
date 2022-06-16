@@ -3,7 +3,7 @@ import '../../Style/register.css';
 
 
 const Login = (props) => {
-    const {goToCreateService} = props;
+    const { goToCreateService } = props;
 
     return (
         <div className='main_card'>
@@ -13,24 +13,26 @@ const Login = (props) => {
                     <div className="description-text">Services, anytime, anywhere</div>
                 </div>
 
-                <div className='title'>Hi!</div>
-                <div className="login_input">
-                    <input type="text"
-                        name="customer"
-                        value=""
-                        placeholder="Login as a customer"
-                    />
-                </div>
-                <div className="login_input">
-                    <input type="text"
-                        name="customer"
-                        value=""
-                        placeholder="Login as a service provider" 
-                    />
+                <div className='items'>
+                    <label className='title'>Hi!</label>
+                    <div className="login_input">
+                        <input type="text"
+                            name="customer"
+                            value=""
+                            placeholder="Login as a customer"
+                        />
+                    </div>
+                    <div className="login_input">
+                        <input type="text"
+                            name="customer"
+                            value=""
+                            placeholder="Login as a service provider"
+                        />
+                    </div>
                 </div>
                 <div className="continue_btn">
                     <button className="btn_primary"
-                    onClick={() => goToCreateService()}>Continue</button>
+                        onClick={() => goToCreateService()}>Continue</button>
                 </div>
             </div>
         </div>
