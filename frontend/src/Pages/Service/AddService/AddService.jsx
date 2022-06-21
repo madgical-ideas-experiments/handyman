@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Style/commonStyle.css';
+// import '../../Style/commonStyle.css';
 
 import "./addService.css";
 import { FaArrowLeft } from 'react-icons/fa';

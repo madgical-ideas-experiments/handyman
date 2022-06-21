@@ -8,8 +8,8 @@ import {
   FaHome,
 } from "react-icons/fa";
 import Home from "../Pages/Home/Home";
-import Services from "../Pages/Service/Service";
-import ServiceProvider from "../Pages/Service/ServiceProvider";
+import Services from "../Pages/Service/AllService/Service";
+import ServiceProvider from "../Pages/Service/ServiceProvider/ServiceProvider";
 import Order from "../Pages/Order/order";
 
 import acRepair from "../images/acRepair.png";

@@ -1,9 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
 .service{
     background-color:white;
 }
@@ -56,7 +51,7 @@
 }
 
 .distance,
-.items,.contact,.ratings{
+.service_items,.contact,.ratings{
     float: left;
     font-size: 13px;
     color:black;
@@ -70,14 +65,14 @@
     width:130px;
     height: 80px;
 }
-.items{
+.service_items{
     margin-top: .7rem;
     font-weight: 400;
     font-style: none;
 }
 
-.items span{
+.service_items span{
     padding: .1rem;  
-    font-size: 13px; 
+    font-size: 16px; 
     font-weight: 400;
 }

@@ -1,12 +1,16 @@
-import React from 'react'
-import '../../Style/register.css';
-
+import React from 'react';
+import './register.css';
+import '../common.css';
 
 const RegisterPage = (props) => {
-    const { handleRegister, handlesignIn } = props;
+    const { handleRegister, handleSignIn } = props;
     return (
         <div className='main_card'>
+
             <div className='card '>
+                <div className='logo'>
+                    <img  src={require('../../../images/logo.png')} alt='logo' />
+                </div>
                 <div className="handyman flex flex-col">
                     <div className="handyman_title">handyman</div>
                     <div className="description-text">Services, anytime, anywhere</div>
@@ -19,11 +23,10 @@ const RegisterPage = (props) => {
                             name="phone"
                             value=''
                             placeholder="phone number"
-                            required
                         />
                     </div>
                     <div className="have_account">Already have an account?
-                        <button onClick={() => handlesignIn()}>Login in here</button>
+                        <span onClick={() => handleSignIn()}> Log in here</span>
                     </div>
                 </div>
                 <div className="continue_btn">

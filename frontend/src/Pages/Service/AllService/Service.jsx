@@ -33,7 +33,7 @@ const Services = (props) => {
               </span>
 
             </div><br />
-            <div className="items">
+            <div className="service_items">
               {items.map((num) => (
                 <span>{num}</span>
               ))}

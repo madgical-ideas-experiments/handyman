@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Varela+Round&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    margin: 0;
-    padding: 0;
-}
-
 .header{
     position: relative;
     width: 100%;
@@ -167,11 +158,11 @@ body{
     place-content: center;
 }
 .provider_btns button{
-    position: absolute;
+    /* position: absolute; */
     box-sizing: border-box;
     width: 95%;
     height: 46px;
-    top: 620px;
+    /* top: 620px; */
     background: #1A81F2;
     border: 1px solid #1A81F2;
     border-radius: 10px;

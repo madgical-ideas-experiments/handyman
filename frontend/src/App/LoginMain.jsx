@@ -1,18 +1,19 @@
 import React,{useState} from 'react';
 import ".././Style/commonStyle.css";
 
-import RegisterPage from '../Pages/login/RegisterPage';
-import GetOtp from '../Pages/login/GetOtp';
-import Login from '../Pages/login/Login';
-import CreatePass from '../Pages/login/CreatePass';
-import CreateServices from '../Pages/Service/CreateServices';
-import AddService from '../Pages/Service/AddService';
-import SignIn from '../Pages/login/SignIn';
+import RegisterPage from '../Pages/Registrations/Register/RegisterPage';
+import GetOtp from '../Pages/Registrations/GetOtp/GetOtp';
+import Login from '../Pages/Registrations/LogIn/Login';
+import CreatePass from '../Pages/Registrations/CreatePass/CreatePass';
+import SignIn from '../Pages/Registrations/SignIn/SignIn';
+
+import CreateServices from '../Pages/Service/CreateService/CreateServices';
+import AddService from '../Pages/Service/AddService/AddService';
+
 
 const LoginMain = () => {
 
     const [state, setstate] = useState(0);
-    const [initial, setfinal]  = useState(0);
 
     const handleRegister = () =>{
         setstate(1);
@@ -20,13 +21,15 @@ const LoginMain = () => {
     const gotoCreateUser = () => {
       setstate(2);
     }
-
+    const handleSignIn = () =>{
+      setstate(3)
+     }
    const handleUserLogin = () =>{
-      setstate(3);
+      setstate(4);
    }
 
    const goToCreateService = () =>{
-    setstate(4);
+    setstate(5);
    }
 
    const handleAddService = () =>{
@@ -36,15 +39,13 @@ const LoginMain = () => {
     setstate(4);
    }
 
-   const handlesignIn = () =>{
-    setfinal(1)
-   }
+  
   return (
     <>
     {
         state === 0 ?
         <RegisterPage 
-        handlesignIn = {handlesignIn}
+        handleSignIn = {handleSignIn}
         handleRegister={handleRegister}/>
         :
         state === 1 ? 
@@ -57,11 +58,16 @@ const LoginMain = () => {
         />
         :
         state === 3 ?
+
+        <SignIn handleUserLogin={handleUserLogin}/>
+
+        : state === 4 ?
         <Login
         goToCreateService={goToCreateService}
        />
         :
-        state === 4 ?
+         
+        state === 5 ?
         <CreateServices 
         handleAddService={handleAddService}/>
         :

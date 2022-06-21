@@ -1,6 +1,5 @@
 import React from 'react'
-import '../../Style/register.css';
-
+import '../common.css';
 
 const Login = (props) => {
     const { goToCreateService } = props;
@@ -8,6 +7,9 @@ const Login = (props) => {
     return (
         <div className='main_card'>
             <div className='card'>
+                <div className='logo'>
+                    <img src={require('../../../images/logo.png')} alt='logo' />
+                </div>
                 <div className="handyman">
                     <div className="handyman_title">handyman</div>
                     <div className="description-text">Services, anytime, anywhere</div>

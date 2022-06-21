@@ -12,6 +12,16 @@
   width: 100vw;
   height: 100vh;
 }
+
 .normal_border {
   border: 1px solid #ccc;
+}
+
+
+
+/* common for the All components ---- background div */
+.main_container{
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
 }
