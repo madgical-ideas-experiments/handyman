@@ -1,15 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './register.css';
 import '../common.css';
 
 const RegisterPage = (props) => {
+
+    const [number, setNumber] = useState({
+        mobileNumber : ""
+    })
     const { handleRegister, handleSignIn } = props;
+
+    const handleChange = (e) =>{
+        setNumber({ mobileNumber: e.target.value });
+    }
     return (
-        <div className='main_card'>
+        <div className='main_container'>
 
             <div className='card '>
                 <div className='logo'>
-                    <img  src={require('../../../images/logo.png')} alt='logo' />
+                    <img  src={require('../../../assets/images/logo.png')} alt='logo' />
                 </div>
                 <div className="handyman flex flex-col">
                     <div className="handyman_title">handyman</div>
@@ -21,11 +29,12 @@ const RegisterPage = (props) => {
                         <span className="country_code">+91</span>
                         <input type="text"
                             name="phone"
-                            value=''
                             placeholder="phone number"
+                            value={number.mobileNumber}
+                            onChange={handleChange}
                         />
                     </div>
-                    <div className="have_account">Already have an account?
+                    <div className="have_account">Already a user?
                         <span onClick={() => handleSignIn()}> Log in here</span>
                     </div>
                 </div>

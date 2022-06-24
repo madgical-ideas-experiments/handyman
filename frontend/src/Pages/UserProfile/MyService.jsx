@@ -22,7 +22,7 @@ const MyService = (props) => {
                         <div className="users_service_details">
                             <span className="user_names">Ram Lal Sabziwala</span>
                             <span className="service_imgs">
-                                <img src={require('../../images/img4.png')}
+                                <img src={require('../../assets/images/img4.png')}
                                     alt="images" />
                             </span>
                             <div className="switch">

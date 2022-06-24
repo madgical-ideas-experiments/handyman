@@ -1,15 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import'./getOtp.css'
 import '../common.css';
 
 const GetOtp = (props) => {
+  
   const { gotoCreateUser } = props;
+  const [phone, setPhone] = useState({
+    regNumber : ""
+  });
+
+
+  const [getOtp, setOtp] = useState({
+    otp1 : '',
+    otp2 : '',
+    otp3 : '',
+    otp4 : ''
+  })
+  
+  const handleMobileNumber = (e) =>{
+    setPhone({regNumber: e.target.value})
+  }
+
+  const handlGetOtp = (e) =>{
+    const getOpt = e.target.value;
+    let otps = '';
+    for( let i=0; i < getOpt.length; i++)
+    {
+      otps += getOpt[i].name;
+    }
+    setOtp(otps);
+  }
+
   return (
-    <div className="main_card">
-      
+    <div className="main_container">
       <div className="card">
         <div className='logo'>
-          <img src={require('../../../images/logo.png')} alt='logo' />
+          <img src={require('../../../assets/images/logo.png')} alt='logo' />
         </div>
         <div className="handyman">
           <div className="handyman_title">handyman</div>
@@ -20,26 +46,47 @@ const GetOtp = (props) => {
           <label className="title">Register here</label>
           <div className="get_Mobile_input">
             <span>+91</span>
-            <input
+            <input 
               type="text"
               name="phone"
-              value=""
               placeholder="12345678"
+              value={phone.regNumber}
+              onChange={handleMobileNumber}
             />
           </div>
 
           <div className="get_otp">
             <div className="otp_text">
-              <input type="text" name="otp" value="" placeholder="4"/>
+              <input type="text" 
+              name="otp1"
+              placeholder="4" 
+              value={getOtp.otp1} 
+              onChange={handlGetOtp}
+              />
             </div>
             <div className="otp_text">
-              <input type="text" name="otp" value="" placeholder="7"/>
+              <input type="text" 
+              name="otp2"
+              placeholder="7" 
+              value={getOtp.otp2} 
+              onChange={handlGetOtp}
+              />
             </div>
             <div className="otp_text">
-              <input type="text" name="otp" value="" placeholder="9"/>
+              <input type="text" 
+              name="otp3" 
+              placeholder="9"
+              value={getOtp.otp3} 
+              onChange={handlGetOtp}
+              />
             </div>
             <div className="otp_text">
-              <input type="text" name="otp" value="" placeholder="0"/>
+              <input type="text" 
+              name="otp3" 
+              placeholder="0"
+              value={getOtp.otp4} 
+              onChange={handlGetOtp}
+              />
             </div>
           </div>
           <div className="verified">

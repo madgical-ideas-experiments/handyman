@@ -28,51 +28,53 @@ const LoginMain = () => {
       setstate(4);
    }
 
-   const goToCreateService = () =>{
+   const loginAsServiceProvider = () =>{
     setstate(5);
    }
 
    const handleAddService = () =>{
-    setstate(5);
+    setstate(6);
    }
    const backToCreateService = () =>{
     setstate(4);
    }
 
-  
+
   return (
     <>
     {
         state === 0 ?
         <RegisterPage 
         handleSignIn = {handleSignIn}
-        handleRegister={handleRegister}/>
+        handleRegister = {handleRegister}/>
         :
+
         state === 1 ? 
         <GetOtp 
-        gotoCreateUser={gotoCreateUser}
+        gotoCreateUser = {gotoCreateUser}
         />
+
         : state === 2 ?
         <CreatePass 
-        handleUserLogin={handleUserLogin}
+        handleUserLogin = {handleUserLogin}
         />
         :
         state === 3 ?
-
-        <SignIn handleUserLogin={handleUserLogin}/>
+        <SignIn handleUserLogin = {handleUserLogin}/>
 
         : state === 4 ?
         <Login
-        goToCreateService={goToCreateService}
+        loginAsServiceProvider = {loginAsServiceProvider}
        />
         :
          
         state === 5 ?
         <CreateServices 
-        handleAddService={handleAddService}/>
+        handleAddService = {handleAddService}/>
         :
+
         <AddService 
-        backToCreateService={backToCreateService}/>
+        backToCreateService = {backToCreateService}/>
     }
     </>
   )

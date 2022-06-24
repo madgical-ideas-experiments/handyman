@@ -1,14 +1,15 @@
 import React from 'react'
+import './login.css';
 import '../common.css';
 
 const Login = (props) => {
-    const { goToCreateService } = props;
+    const { loginAsCustomer,loginAsServiceProvider } = props;
 
     return (
-        <div className='main_card'>
+        <div className='main_container'>
             <div className='card'>
                 <div className='logo'>
-                    <img src={require('../../../images/logo.png')} alt='logo' />
+                    <img src={require('../../../assets/images/logo.png')} alt='logo' />
                 </div>
                 <div className="handyman">
                     <div className="handyman_title">handyman</div>
@@ -18,23 +19,17 @@ const Login = (props) => {
                 <div className='items'>
                     <label className='title'>Hi!</label>
                     <div className="login_input">
-                        <input type="text"
-                            name="customer"
-                            value=""
-                            placeholder="Login as a customer"
-                        />
+                        <button className='login_btn'
+                        onClick={() =>{loginAsCustomer()}}>
+                            Login as a customer
+                        </button>
                     </div>
                     <div className="login_input">
-                        <input type="text"
-                            name="customer"
-                            value=""
-                            placeholder="Login as a service provider"
-                        />
+                        <button className='login_btn'
+                        onClick={() =>{loginAsServiceProvider()}}>
+                        Login as a service provider
+                        </button>
                     </div>
-                </div>
-                <div className="continue_btn">
-                    <button className="btn_primary"
-                        onClick={() => goToCreateService()}>Continue</button>
                 </div>
             </div>
         </div>

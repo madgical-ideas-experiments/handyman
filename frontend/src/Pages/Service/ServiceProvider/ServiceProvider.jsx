@@ -21,7 +21,7 @@ const ServiceProvider = (props) => {
                     <span className='faArrowLefts'
                     onClick={() =>goToServiceProvider()}><FaArrowLeft /></span>
                     <span className='faBookmark'>
-                        <img src={require('../../../images/bookmark.png')} />
+                        <img src={require('../../../assets/images/bookmark.png')} />
                     </span>
                 </div>
                 <div className='provider_details'>
@@ -40,12 +40,12 @@ const ServiceProvider = (props) => {
                     <div className="provider_contact">
                         <div className="call">
                             <span>Call Now
-                                <img className='call_img' src={require('../../../images/call.png')} />
+                                <img className='call_img' src={require('../../../assets/images/call.png')} />
                             </span>
                         </div>
                         <div className="chat">
                             <span>Chat
-                                <img className='chat_img' src={require('../../../images/chat.png')} />
+                                <img className='chat_img' src={require('../../../assets/images/chat.png')} />
                             </span>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const ServiceProvider = (props) => {
                 <div className='add_para'>
                     <span>Address</span>
                     <span className='auto_para'>Auto Detect 
-                        <img src={require('../../../images/location.png')} />
+                        <img src={require('../../../assets/images/location.png')} />
                     </span>
                 </div>
                 <div className='input_div'>

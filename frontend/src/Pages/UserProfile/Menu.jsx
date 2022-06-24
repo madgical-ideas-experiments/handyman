@@ -44,7 +44,7 @@ const Menu = (props) => {
                     <button className="My_Service_btn"
                         onClick={() => handleMyService()}>
                         <span className="service_icon">
-                            <img src={require('../../images/service.png')}
+                            <img src={require('../../assets/images/service.png')}
                                 alt="" />
                         </span>
                         <span className="my_service">My Service</span>

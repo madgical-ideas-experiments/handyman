@@ -13,7 +13,7 @@ const Order = (props) => {
             <div className='errow_title'>
                 <span className='backErrow'
                     onClick={() => goToservicepage()}>
-                    <img src={require('../../images/backErrow.png')} alt="" />
+                    <img src={require('../../assets/images/backErrow.png')} alt="" />
                 </span>
                 <span className='order_para'>Order</span>
             </div>

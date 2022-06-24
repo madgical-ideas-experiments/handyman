@@ -3,7 +3,7 @@
 
 /* Register component */
 
-.main_card {
+.main_container {
   min-height: 100vh;
   background: var(--bg-main-card);
   display: flex;
@@ -14,7 +14,7 @@
 
 .card {
   width: min(80vw, 350px);
-  min-height: 500px;
+  min-height: 470px;
   padding: 2.5rem 1rem;
   background: var(--bg-card);
   border: var(--br-3px);
@@ -75,7 +75,7 @@
 
 /* Login Pages Input */
 
-.login_input input,
+
 .password_input input,
 .signin_input input {
   width: 100%;
@@ -87,9 +87,9 @@
   font-style: var(--fs-normal);
   font-weight: var(--fw-300);
   font-size: var(--fs-inputs);
-  color: var(--clr-grey);
+  color: var(--clr-000);
   background: var(--bg-card);
-  border: var(--br-dark-grey);
+  border: var(--br-grey);
   border-radius: var(--border-10px);
 }
 
@@ -107,7 +107,7 @@
   font-style: var(--fs-normal);
   font-weight: var(--fw-400);
   font-size: var(--fs-title);
-  color: #ffffff;
+  color: var(--clr-white);
 
   background: var(--btn-bg-primary);
   border: 1px solid #1a81f2;

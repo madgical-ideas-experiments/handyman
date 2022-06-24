@@ -12,15 +12,15 @@ import Services from "../Pages/Service/AllService/Service";
 import ServiceProvider from "../Pages/Service/ServiceProvider/ServiceProvider";
 import Order from "../Pages/Order/order";
 
-import acRepair from "../images/acRepair.png";
-import gasStove from "../images/gasStove.png";
-import vegetable from "../images/vegetable.png";
-import water from "../images/water.png";
+import acRepair from "../assets/images/acRepair.png";
+import gasStove from "../assets/images/gasStove.png";
+import vegetable from "../assets/images/vegetable.png";
+import water from "../assets/images/water.png";
 
-import img1 from "../images/img1.png";
-import img2 from "../images/img2.png";
-import img3 from "../images/img3.png";
-import img4 from "../images/img4.png";
+import img1 from "../assets/images/img1.png";
+import img2 from "../assets/images/img2.png";
+import img3 from "../assets/images/img3.png";
+import img4 from "../assets/images/img4.png";
 
 const App = () => {
   const Categories = [

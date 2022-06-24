@@ -20,8 +20,10 @@
 
 
 /* common for the All components ---- background div */
-.main_container{
+.container_div{
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
+  /* max-height: 100vh;
+  overflow-y: hidden; */
+  background-color:var(--clr-white);
 }

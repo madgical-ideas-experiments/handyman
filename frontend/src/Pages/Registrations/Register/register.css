@@ -17,7 +17,7 @@
     font-style: var(--fs-normal);
     border: none;
     outline: none;
-    color: var(--clr-grey);
+    color: var(--clr-000);
   }
   .country_code {
     font-family: var(--ff-Inter);
