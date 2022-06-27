@@ -131,28 +131,6 @@
 
 /* service Provider */
 
-.add_service_input input{
-    width: 95%;
-    height: 40px;
-    padding-left: 5px;
-    margin-top: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    outline: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    padding-left: 1rem;
-    color: #898989;
-    background: #FFFFFF;
-    border: 1px solid #898888;
-    border-radius: 5px;
-}
-
-
-
-
 .provider_btns{
     width: 100%;
     place-content: center;

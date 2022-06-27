@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
 import './createService.css';
-
 const CreateServices = (props) => {
 
     const [state, setstate] = useState(0);
+    const [data, setData] = useState({
+        providername: "",
+        number: ""
+    });
+
+    const handleChange = (e) => {
+        const values = e.target.value;
+        let inputvalue = "";
+        for (let i = 0; i < inputvalue.length; i++) {
+            inputvalue += values[i].name;
+        }
+        setData(inputvalue);
+    }
 
     const handleLocation = () => {
         setstate(1);
@@ -13,19 +25,19 @@ const CreateServices = (props) => {
     return (
         <div className='container_div'>
             <div className='create_service_container'>
-                <div className='forms'>
-                    <div className="inputs">
+                <div className='forms_element'>
+                    <div className="forms_element_inputs">
                         <input type="text"
-                            name="username"
-                            value=""
+                            name="providername"
+                            value={data.providername}
                             placeholder="Service provider name"
-
+                            onChange={handleChange}
                         />
                     </div>
-                    <div className="inputs">
-                        <input type="number"
-                            name="mobileNumber"
-                            value=""
+                    <div className="forms_element_inputs">
+                        <input type="text"
+                            name="number"
+                            value={data.number}
                             placeholder="Enter your mobile number"
 
                         />
@@ -35,21 +47,20 @@ const CreateServices = (props) => {
                         <span className="add_location"
                             onClick={() => handleLocation()}>+</span>
                     </div>
-
-                    <p>Add multiple locations by clicking '+'</p>
+                    <p className='add_mul_locations'>Add multiple locations by clicking '+'</p>
                 </div>
                 <div className='available_categories'>
-                <p> Choose your service from the available categories</p>
+                    <p> Choose your service from the available categories</p>
                     <div className="service_category">
                         <div className="service_category_img">
                             <img src={require('../../../assets/images/repairSer.png')}
                                 alt="repair" />
-                            <label>Repair service</label>
+                            <label>Repair Service</label>
                         </div>
 
                         <div className="service_category_img">
                             <img src={require('../../../assets/images/vegSer.png')} alt="repair" />
-                            <label>Vegitables Seller</label>
+                            <label>Vegetable Seller</label>
                         </div>
 
                         <div className="service_category_img">
@@ -61,9 +72,8 @@ const CreateServices = (props) => {
                             <label>Gass Stove Repair</label>
                         </div>
                     </div>
-
                 </div>
-                <div className='continue_btn'>
+                <div className='continue_btn service_btns'>
                     <button className='btn_primary'
                         onClick={() => handleAddService()}>
                         Continue</button>

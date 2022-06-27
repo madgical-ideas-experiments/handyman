@@ -23,7 +23,13 @@
 .container_div{
   margin: 0;
   padding: 0;
-  /* max-height: 100vh;
-  overflow-y: hidden; */
   background-color:var(--clr-white);
+}
+
+/* style For back errow image */
+.backErrow_img{
+  width: 32px;
+  height: 30px;
+  padding: 4px 2px 0 5px;
+  
 }

@@ -13,10 +13,12 @@
     --fs-account-title : 13px;
 
     --fs-element-names:13px;
+    --fs-table_items : 18px;
 
     --clr-000 : black;
     --clr-grey : #898989;
-
+    --clr-green-cyan: #B8EDDD;
+    
     --bg-handyman : linear-gradient(89.81deg, #0081FF -2.6%, rgba(255, 0, 0, 0) 180.15%);
     --bg-main-card : #D2F0FF;
     --bg-card : #FFFFFF;

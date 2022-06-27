@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap'); */
-
 
 .create_service_container{
     display: flex;
@@ -9,19 +7,14 @@
 }
 
 
-.forms{
+.forms_element{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.forms p{
-    line-height: 8px;
-    color: var(--clr-000);
-    font-size: var(--fs-inputs);
-}
 
-.inputs input{
+.forms_element_inputs input{
     width: 100%;
     height: 40px;
     font-family: var(--ff-Inter);
@@ -56,50 +49,79 @@
     font-weight: var(--fs-300);
 }
 
-
+.add_mul_locations{
+    color: var(--clr-000);
+    font-size: var(--fs-element-names);
+    font-family: var(--ff-Inter);
+    font-style: var(--fs-normal); 
+    line-height:18px;
+}
 
 .available_categories p{
     display: flex;
     flex-direction: column;
     color: var(--clr-000);
     font-size: var(--fs-title);
-    font-family: var();
+    font-family: var(--ff-Inter);
+    font-style: var(--fs-normal);
 }
+
 .service_category{
     display: flex;
-    gap: 10px;
+    gap: 13px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-left: .4rem;
+    padding-left: .5rem;
 }
 
 .service_category_img{
     text-align: center;
-    width: 83px;
+    width: 80px;
     display: flex;
     flex-direction: column;
 }
 
 .service_category_img img{
-    width: 83px;
-    height: 80px;
+    width: 80px;
+    height: 77px;
     border-radius: 50%;
-    background-color: #B8EDDD;
+    background-color: var(--clr-green-cyan);
 }
 .service_category_img label{
     font-family: var(--ff-Inter);
     font-weight: var(--fs-300);
-   font-size: var(  --fs-element-names); 
+    font-size: var(  --fs-element-names); 
     color: var(--clr-000);
+}
 
+.service_btns{
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+    width: 94%;
+  }
+
+@media screen and (min-width:401px){
+    .create_service_container{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+      
 }
 
 
-@media screen and ( min-width:700px){
-  
-}
-
-
-@media  (min-width:380px){
-
+@media screen and (max-width:400px){
+    .service_category{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+        gap: 0;
+    }
+    .service_btns{
+        position: absolute;
+        bottom: 2rem;
+        text-align: center;
+        width: 91%;
+      }
 }
