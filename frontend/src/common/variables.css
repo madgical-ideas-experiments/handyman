@@ -19,11 +19,19 @@
     --clr-grey : #898989;
     --clr-green-cyan: #B8EDDD;
     
+    --bg-time:#EEEEEE;
+    --br-time:4px;
+
+
     --bg-handyman : linear-gradient(89.81deg, #0081FF -2.6%, rgba(255, 0, 0, 0) 180.15%);
     --bg-main-card : #D2F0FF;
     --bg-card : #FFFFFF;
     --btn-bg-primary : #1A81F2;
     --clr-white:#FFFFFF;
+    --clr-light-coral:#FB8181;
+    --clr-yellow: #FFD233;
+    --clr-red:#FD1010;
+    --clr-green:#0FA958;
 
     --br-primary : 1px solid #1A81F2;
     --br-grey : 1px solid #DFDDD6;

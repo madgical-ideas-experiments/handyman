@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
 }
+.flex-row{
+  flex-direction: row;
+}
 .flex-col{
   flex-direction: column;
 }
@@ -18,6 +21,11 @@
 }
 
 
+.style_inter{
+  font-family: var(--ff-Inter);
+  font-style: var(--fs-normal);
+  font-weight:var(--fw-300) ;
+}
 
 /* common for the All components ---- background div */
 .container_div{

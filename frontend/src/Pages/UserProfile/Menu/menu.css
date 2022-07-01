@@ -1,0 +1,99 @@
+
+.menu-block{
+    width: 85%;
+}
+.block_element_profile{
+    width: 100%;
+    height: 178px;
+    background: var(--bg-main-card);
+}
+
+.user_icon{
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+    background: var(--clr-white);
+}
+
+.edit_para{
+    font-size:var(--fs-element-names);
+    cursor: pointer;
+}
+
+.user_name{
+    font-size: var(--fs-title);
+    color: var(--clr-000);
+}
+
+.block_items{
+padding: 0 1.5rem 0 16px;
+}
+
+
+.order_list{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    height: 75px;
+}
+.block_service_items
+{    
+    box-sizing: border-box;   
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    height: 75px;
+}
+
+
+.order_list span,
+.block_service_items span
+{
+    padding-left:1rem;
+    color: var(--clr-000);
+}
+
+.order_list img{
+    width: 28px;
+    height: 41px;
+}
+.block_service_items img
+{
+    width: 27px;
+    height: 29px;
+}
+
+hr{
+    width: 100%;
+    height:0.26px;
+    color: var(  --clr-000);
+    margin: 0;
+    padding: 0;
+}
+
+/* Logout div */
+
+
+.logout_btn{
+    box-sizing: border-box;
+    position: absolute;
+    width: 85%;
+    height: 59px;
+    bottom: 3rem;
+    background: #DFDDD6;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.logout_btn img{
+    width: 44px;
+    height: 25px;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.logout_btn span{
+    padding-left: 1rem;
+}

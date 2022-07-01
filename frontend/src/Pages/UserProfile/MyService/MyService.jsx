@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Style/commonStyle.css';
+import '../../../Style/commonStyle.css';
 import './myService.css';
 import {FaArrowLeft} from 'react-icons/fa';
 
@@ -22,7 +22,7 @@ const MyService = (props) => {
                         <div className="users_service_details">
                             <span className="user_names">Ram Lal Sabziwala</span>
                             <span className="service_imgs">
-                                <img src={require('../../assets/images/img4.png')}
+                                <img src={require('../../../assets/images/img4.png')}
                                     alt="images" />
                             </span>
                             <div className="switch">

@@ -1,0 +1,55 @@
+
+
+
+.block_element_Edit-profile{
+    width: 100%;
+    height: 178px;
+    background: var(--bg-main-card);
+}
+
+
+.user_icon{
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+    background: var(--clr-white);
+}
+
+
+.edit_names img{
+    width:14px;
+    height:14px;
+    text-align: center;
+    margin: 3.6px 0 0 5px;
+
+}
+/* User contacts */
+.user_contacts p,
+.user_address p{
+    margin: 0;
+}
+
+.user_contacts,
+.user_address{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    place-content: center;
+}
+
+.user_mobile,
+.edit_address,
+.account-title{
+    font-size: var(--fs-title);
+}
+.user_account{
+    padding: 2rem 1.5rem 0 1rem;
+}
+
+.change_address,
+.change_number{
+    font-size: var(--fs-element-names);
+    color: var(--clr-grey);
+}

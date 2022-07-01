@@ -1,0 +1,147 @@
+.order_child{
+    position: absolute;
+    width: 100%;
+    top:8px
+}
+
+.order_block {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.order_block-title {
+    font-size: var(--fs-title);
+    padding-left:.5rem;
+}
+
+.order_block-element{
+    display: flex;
+    flex-direction: column;
+    margin-top: .7rem;
+    padding:0 .4rem 0 1rem ;
+    width: 100%;
+    height: 153px;
+    background: #F0EFEC;
+    border: 2.25px solid #F0EFEC;
+
+    /* -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; */
+}
+.element-name-date{
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.element-name{
+    font-size: var(--fs-title);
+}
+.element-date{
+    float: right;
+    padding-top: 4px;
+    font-size: var(--fs-element-names);
+}
+
+.element-status{
+    font-size: var(--fs-element-names);
+}
+
+.status-progress {
+    color: var(--clr-green);
+}
+.status-canceled{
+    color: var(--clr-red);
+}
+.status-delivered{
+    color: var(--clr-000);
+}
+
+.ele-deliver-add,
+.ele-reminder{
+    color: var(--clr-000);
+    font-size: var(--fs-element-names);
+}
+
+.element-status img{
+    width: 15px;
+    height: 8px;
+    padding-left: 5px;
+}
+
+.ele-deliver-add{
+    box-sizing: border-box;
+    width: 100%;
+}
+.ele-deliver-add img{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.ele-deliver-add span{
+    padding-left: 4px;
+}
+
+.button-type{
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: var(--fs-element-names);
+}
+.btn_accept{
+    width: 93px;
+    height: 26px;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: var(--clr-white);
+    background: var(--btn-bg-primary);
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn_cancel{
+    width: 93px;
+    height: 26px;
+    border: none;
+    outline: none;
+    margin-left: 14px;
+    border-radius: 4px;
+    color: var(--clr-white);
+    background: var(--clr-light-coral);
+    cursor: pointer;
+}
+.ele_ratting{
+    width: 100%;
+    box-sizing: border-box;
+}
+.srvice_ratting{
+    color: var(--clr-yellow);
+    margin-left: 7px;
+}
+
+@media screen and (min-width:513px) {
+    .button-type{
+        box-sizing: border-box;
+        margin-top: 1.5rem;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

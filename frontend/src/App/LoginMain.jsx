@@ -31,12 +31,14 @@ const LoginMain = () => {
    const loginAsServiceProvider = () =>{
     setstate(5);
    }
-
+   const backToLogin = () =>{
+    setstate(4);
+   }
    const handleAddService = () =>{
     setstate(6);
    }
    const backToCreateService = () =>{
-    setstate(4);
+    setstate(5);
    }
 
 
@@ -70,7 +72,8 @@ const LoginMain = () => {
          
         state === 5 ?
         <CreateServices 
-        handleAddService = {handleAddService}/>
+        handleAddService = {handleAddService}
+        backToLogin={backToLogin}/>
         :
 
         <AddService 

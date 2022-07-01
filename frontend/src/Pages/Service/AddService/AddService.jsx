@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import "./addService.css";
-import AllItems from './AllItems'
+import AllItems from './AllItems';
+
 const AddService = (props) => {
 
     const { backToCreateService, handleAddService } = props;
