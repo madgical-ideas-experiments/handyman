@@ -38,7 +38,7 @@ const RegisterPage = (props) => {
                         <span onClick={() => handleSignIn()}> Log in here</span>
                     </div>
                 </div>
-                <div className="continue_btn">
+                <div className="button">
                     <button className="btn_primary"
                     onClick={() => handleRegister()}>Continue</button>
                 </div>

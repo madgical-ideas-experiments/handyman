@@ -1,42 +1,33 @@
 
 :root{
-    --ff-Varela : 'Varela Round';
-    --ff-Inter: 'Inter';
-    --fs-normal : normal;
 
-    --fw-400 : 400;
-    --fw-300 : 300;
- 
-    --fs-handyman : 32px;
-    --fs-title : 16px;
-    --fs-inputs : 16px;
-    --fs-account-title : 13px;
+  --black:#000000;
+  --white: #FFFFFF;
+  --cyan: #D2F0FF;
+  --blue:#1A81F2;
+  --red:#FD1010;
+  --pink:#FB8181;
+  --yellow:#FFD233;
+  --green:#0FA958;
+  --green-cyan: #B8EDDD;
 
-    --fs-element-names:13px;
-    --fs-table_items : 18px;
-
-    --clr-000 : black;
-    --clr-grey : #898989;
-    --clr-green-cyan: #B8EDDD;
-    
-    --bg-time:#EEEEEE;
-    --br-time:4px;
+  --grey-1:#898989; /*Text, border  */
+  --grey-2:#F0EFEC; /* background */
+  
+  --font-size-large:32px;
+  --font-size-title:18px; 
+  --font-size-normal:16px;
+  --font-size-small:13px;
 
 
-    --bg-handyman : linear-gradient(89.81deg, #0081FF -2.6%, rgba(255, 0, 0, 0) 180.15%);
-    --bg-main-card : #D2F0FF;
-    --bg-card : #FFFFFF;
-    --btn-bg-primary : #1A81F2;
-    --clr-white:#FFFFFF;
-    --clr-light-coral:#FB8181;
-    --clr-yellow: #FFD233;
-    --clr-red:#FD1010;
-    --clr-green:#0FA958;
+  --font-family-1 : 'Varela Round';
+  --font-family-2 : 'Inter';
+  --font-style-normal : normal;
 
-    --br-primary : 1px solid #1A81F2;
-    --br-grey : 1px solid #DFDDD6;
-    --br-dark-grey : 1px solid #898888;
-    --br-3px : 3px solid #F0EFEC;
-    --border-10px : 10px;
-    --br-5px: 5px;
+  --font-weight-1:400;
+  --font-weight-2:300;
+
+  --border-radius-1:10px;
+  --border-radius-2:5px;
+
   }

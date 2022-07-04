@@ -8,26 +8,27 @@
 .add_service_input input{
     width: 100%;
     height: 40px;
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
-    font-weight: var(--fw-300);
-    font-size: var(--fs-inputs);
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-normal);
     padding-left: 1rem;
-    color: var(--clr-000);
-    background: var(--clr-white);
-    border: var(--br-grey);
-    border-radius:var(--br-5px);
+    color: var(--black);
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius:var(--border-radius-2);
     outline: none;
+
 }
 
 
 .addService_block-title,
 .available_item-title {
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
-    font-weight: var(--fw-300);
-    font-size: var(--fs-title);
-    color: var(--clr-000);
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-normal);
+    color: var(--black);
     padding: .7rem 0 0 0;
 }
 
@@ -43,17 +44,17 @@
     text-align: center;
     width: 90px;
     height: 96px;
-    color: var(--btn-bg-primary);
+    color: var(--blue);
     font-size: 60px;
-    background: var(--clr-white);
-    border: var(--br-grey);
-    border-radius: var(--border-10px);
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: var(--border-radius-1);
     cursor: pointer;
 }
 .check_available_items{
     margin-top: -.5rem;
-    border: var(--br-grey);
-    border-radius: var(--border-10px);
+    border: 1px solid var(--grey-2);
+    border-radius: var(--border-radius-1);
 }
 
 table{
@@ -63,12 +64,12 @@ table{
 td{
     width: 100%;
     box-sizing: border-box;
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
-    font-weight: var(--fw-300);
-    color: var(--clr-000);
-    font-size: var(--fs-table_items);
-    border-top: var(--br-grey);
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-2);
+    color: var(--black);
+    font-size: var(--font-size-normal);
+    border-top: 1px solid var(--grey-2);
     padding-left: 2.5rem;
     height: 30px;
 }
@@ -77,11 +78,11 @@ td:nth-child(odd) {
   }
 .items_price,
 .table-items{
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
-    font-weight: var(--fw-300);
-    font-size: var(--fs-title);
-    color: var(--clr-000);
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-normal);
+    color: var(--black);
     padding: 2px 29px 2px 29px;
 }
 
@@ -95,8 +96,4 @@ td:nth-child(odd) {
 .addService_btn{
     padding: 1.4rem 1rem 1.5rem 1rem;
     width: 100%;
-}
-
-@media screen and (min-width:509px) {
-    
 }

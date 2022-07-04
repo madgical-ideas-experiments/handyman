@@ -22,16 +22,49 @@
 
 
 .style_inter{
-  font-family: var(--ff-Inter);
-  font-style: var(--fs-normal);
-  font-weight:var(--fw-300) ;
+  font-family: var(--font-family-2);
+  font-style: var(--font-style-normal);
+  font-weight:var(--font-weight-2) ;
+}
+
+
+
+
+/* Button style */
+.button {
+  align-self: center;
+  width: 100%;
+  height: inherit;
+}
+.btn_primary {
+  outline: none;
+  width: 100%;
+  height: 35px;
+  font-family: var(--font-family-2);
+  font-style: var(--font-style-normal);
+  font-weight:var(--font-weight-2) ;
+  color: var(--white);
+  text-align: center;
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: var(--border-radius-1);
+  cursor: pointer;
+}
+
+.btn_danger{
+  border: none;
+  outline: none;
+  color: var(--white);
+  background-color: var(--pink);
+  cursor: pointer;
+  text-align: center;
 }
 
 /* common for the All components ---- background div */
 .container_div{
   margin: 0;
   padding: 0;
-  background-color:var(--clr-white);
+  background-color:var(--white);
 }
 
 /* style For back errow image */

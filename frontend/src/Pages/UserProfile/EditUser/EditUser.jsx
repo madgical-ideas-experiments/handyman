@@ -1,7 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './editUser.css';
 
 const EditUser = (props) => {
+    const [data, setData] = useState(false);
+    
+    const [details, setDetails] = useState({
+        names : 'User Name',
+        mobile : '12345678',
+        address : '133, Abc Society, Delhi Road, Delhi',
+    });
+    
     const {handleEdit} = props
     return (
         <div className='container_div'>
@@ -22,7 +30,7 @@ const EditUser = (props) => {
             <div className="user_account">
                 <p className="account-title style_inter">Account</p>
                 <div className="user_contacts style_inter">
-                    <p className="user_mobile">+91 12345678</p>
+                    <p className="user_mobile">+91 <span>12345678</span></p>
                     <p className="change_number">
                         Tap here to change number
                     </p>

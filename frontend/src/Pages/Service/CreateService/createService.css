@@ -17,14 +17,15 @@
 .forms_element_inputs input{
     width: 100%;
     height: 40px;
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
-    font-size: var(--fs-inputs);
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-normal);
     border:none;
-    color: var(--clr-000);
+    color: var(--black);
     outline: none;
-    border-radius: var(--br-5px);
-    border:  var(--br-grey);
+    border-radius: var(--border-radius-2);
+    border: 1px solid var(--grey-2);
     padding-left: .7rem;
 }
 
@@ -36,30 +37,32 @@
     padding-left: .7rem;
     padding-top: .4rem;
     padding-bottom: .4rem;
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
-    font-size: var(--fs-title);
-    color: var(--clr-000);
-    border-radius: var(--br-5px);
-    border: var(--br-grey);
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal);
+    font-size: var(--font-size-normal);
+    color: var(--black);
+    border-radius: var(--border-radius-2);
+    border: 1px solid var(--grey-2);
+
+    
 }
 
 
 
 .add_location{
-    cursor: pointer;
-    font-style: var(--fs-normal);
-    font-size: var(--fs-title);
     float: right;
+    font-style: var(--font-style-normal);
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-2);
     padding-right: 1rem;
-    font-weight: var(--fs-300);
+    cursor: pointer;
 }
 
 .add_mul_locations{
-    color: var(--clr-000);
-    font-size: var(--fs-element-names);
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal); 
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal); 
+    font-size: var(--font-size-small);
+    color: var(--black);
     line-height:18px;
 }
 
@@ -70,10 +73,10 @@
     margin-top: -.8rem;
     padding-bottom: .4rem;
     gap: 5px;
-    border-bottom-left-radius: var(--br-5px);
-    border-bottom-right-radius: var(--br-5px);
+    border-bottom-left-radius: var(--border-radius-2);
+    border-bottom-right-radius: var(--border-radius-2);
 
-    border: var(--br-grey);
+    border: 1px solid var(--grey-2);
     border-top: 0;
 }
 .add_location-items{
@@ -82,11 +85,11 @@
 
 .add_location-items input{
     height: 18px;
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal);
     font-size: 13px;
     padding-left: .7rem;
-    color: var(--clr-000);
+    color: var(--black);
     border: none;
     outline: none;
 }
@@ -100,14 +103,14 @@
 }
 
 .address{
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal);
     font-size: 13px;
     padding-left: .7rem;
-    color: var(--clr-000);
+    color: var(--black);
 }
 .border-bottom{
-    border-bottom: var(--br-grey);
+    border-bottom: var(--grey-2);
     margin: 0;
     padding-bottom: .4rem;
 
@@ -121,22 +124,22 @@
 
 .time-slot{
     font-size: var(--fs-element-names);
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
-    color: var(--clr-000);
-    background: var(--bg-time);
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal);
+    color: var(--black);
+    background: var(--grey-2);
     padding: 0 5px 0 5px;
-    border-radius: var(  --br-time);
+    border-radius: var(--border-radius-2);
     cursor: pointer;
 }
 
 /* Choose Category style */
 
 .available_categories p{
-    color: var(--clr-000);
-    font-size: var(--fs-title);
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
+    font-style: var(--font-style-normal);
+    font-size: var(--font-size-normal);
+    font-family: var(--font-family-2);
+    color: var(--black);
 }
 
 
@@ -166,13 +169,13 @@
     width: 80px;
     height: 77px;
     border-radius: 50%;
-    background-color: var(--clr-green-cyan);
+    background-color: var(--green-cyan);
 }
 .service_category_img label{
-    font-family: var(--ff-Inter);
-    font-weight: var(--fs-300);
-    font-size: var(  --fs-element-names); 
-    color: var(--clr-000);
+    font-family: var(--font-family-2);
+    font-weight: var( --font-weight-2);
+    font-size: var(--font-size-small); 
+    color: var(--black);
 }
 
 .service_btns{

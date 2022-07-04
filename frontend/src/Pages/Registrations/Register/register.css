@@ -1,43 +1,43 @@
 .register_input {
-    border: var(--br-grey);
-    border-radius: var(--border-10px);
+    border: 1px solid var(--grey-1);
+    border-radius: var(--border-radius-1);
     width: 100%;
     height: 46px;
     padding: 7px;
-    font-size: var(--fs-inputs);
+    font-size: var(--font-size-normal);
   }
   .register_input input {
     width: 80%;
     height: 30px;
     padding-left: 7px;
-    border-radius: var(--border-10px);
-    font-family: var(--ff-Inter);
-    font-size: var(--fs-inputs);
-    font-weight: var(--fw-300);
-    font-style: var(--fs-normal);
+    border-radius: var(--border-radius-1);
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-2);
+    font-style: var(--font-style-normal);
     border: none;
     outline: none;
-    color: var(--clr-000);
+    color: var(--black);
   }
   .country_code {
-    font-family: var(--ff-Inter);
-    font-size: var(--fs-inputs);
-    font-weight: var(--fw-300);
-    font-style: var(--fs-normal);
-    color: var(--clr-grey);
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-2);
+    font-style: var(--font-style-normal);
+    color: var(--grey-1);
   }
   
 
 .have_account {
-    font-family: var(--ff-Inter);
-    font-style: var(--fs-normal);
-    font-weight: var(--fw-300);
-    font-size: var(--fs-account-title);
+    font-family: var(--font-family-2);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-small);
   }
   
   .have_account span {
-    color: #0081ff;
-    background-color: var(--bg-card);
+    color: var(--blue);
+    background-color: var(--white);
     cursor: pointer;
   }
   

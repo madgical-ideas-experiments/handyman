@@ -94,7 +94,7 @@ const GetOtp = (props) => {
           </div>
         </div>
 
-        <div className="continue_btn">
+        <div className="button">
           <button className="btn_primary" onClick={() => gotoCreateUser()}>
             Continue
           </button>

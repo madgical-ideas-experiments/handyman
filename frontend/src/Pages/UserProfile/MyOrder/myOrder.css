@@ -1,18 +1,28 @@
-.order_child{
-    position: absolute;
-    width: 100%;
-    top:8px
-}
 
-.order_block {
+.heading_block-ele {
     box-sizing: border-box;
     width: 100%;
 }
 
-.order_block-title {
-    font-size: var(--fs-title);
-    padding-left:.5rem;
+.block-ele-title{
+    padding: 10px;
+    color: var(--black);
+    font-size: var(--font-size-normal);
 }
+
+
+
+.order_block{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+} 
+
+.order_block::-webkit-scrollbar{
+    display: none;
+}
+
+
 
 .order_block-element{
     display: flex;
@@ -21,12 +31,8 @@
     padding:0 .4rem 0 1rem ;
     width: 100%;
     height: 153px;
-    background: #F0EFEC;
-    border: 2.25px solid #F0EFEC;
-
-    /* -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: scroll; */
+    background: var(--grey-2);
+    border: 2px solid var(--grey-2);
 }
 .element-name-date{
     box-sizing: border-box;
@@ -34,32 +40,32 @@
 
 }
 .element-name{
-    font-size: var(--fs-title);
+    font-size: var(--font-size-normal);
 }
 .element-date{
     float: right;
     padding-top: 4px;
-    font-size: var(--fs-element-names);
+    font-size: var(--font-size-small);
 }
 
 .element-status{
-    font-size: var(--fs-element-names);
+    font-size: var(--font-size-small);
 }
 
 .status-progress {
-    color: var(--clr-green);
+    color: var(--green);
 }
 .status-canceled{
-    color: var(--clr-red);
+    color: var(--red);
 }
 .status-delivered{
-    color: var(--clr-000);
+    color: var(--black);
 }
 
 .ele-deliver-add,
 .ele-reminder{
-    color: var(--clr-000);
-    font-size: var(--fs-element-names);
+    color: var(--black);
+    font-size: var(--font-size-small);
 }
 
 .element-status img{
@@ -84,7 +90,7 @@
 .button-type{
     box-sizing: border-box;
     margin-top: 5px;
-    font-size: var(--fs-element-names);
+    font-size: var(--font-size-small);
 }
 .btn_accept{
     width: 93px;
@@ -92,29 +98,35 @@
     border: none;
     outline: none;
     text-align: center;
-    color: var(--clr-white);
-    background: var(--btn-bg-primary);
+    color: var(--white);
+    background: var(--blue);
+    font-size: var(--font-size-small);
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: var(--border-radius-2);
 }
 .btn_cancel{
     width: 93px;
     height: 26px;
-    border: none;
-    outline: none;
     margin-left: 14px;
-    border-radius: 4px;
-    color: var(--clr-white);
-    background: var(--clr-light-coral);
-    cursor: pointer;
+    border-radius: var(--border-radius-2);
+    font-size: var(--font-size-small);
 }
 .ele_ratting{
     width: 100%;
     box-sizing: border-box;
 }
-.srvice_ratting{
-    color: var(--clr-yellow);
-    margin-left: 7px;
+.service_ratting img{
+    width: 18px;
+    height: 13px;
+    padding-left: 6px;
+    color:var(--yellow);
+}
+
+.more-element{
+    box-sizing: border-box;
+    padding: 6.5px 0 0 16px;
+    font-size: var(--font-size-small);
+    color: var(--black);
 }
 
 @media screen and (min-width:513px) {
