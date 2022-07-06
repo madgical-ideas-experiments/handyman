@@ -8,7 +8,7 @@ import CreatePass from '../Pages/Registrations/CreatePass/CreatePass';
 import SignIn from '../Pages/Registrations/SignIn/SignIn';
 
 import CreateServices from '../Pages/Service/CreateService/CreateServices';
-import AddService from '../Pages/Service/AddService/AddService';
+import ServiceDetails from '../Pages/Service/ServiceDetails/ServiceDetails';
 
 
 const LoginMain = () => {
@@ -76,7 +76,7 @@ const LoginMain = () => {
         backToLogin={backToLogin}/>
         :
 
-        <AddService 
+        <ServiceDetails 
         backToCreateService = {backToCreateService}/>
     }
     </>

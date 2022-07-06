@@ -1,42 +1,54 @@
-import React from 'react'
-import '../../../Style/commonStyle.css';
+import React, { useState } from 'react'
+import Services from './Services'
 import './myService.css';
-import {FaArrowLeft} from 'react-icons/fa';
-
+import EditService from '../EditService/EditService';
 
 
 const MyService = (props) => {
-    const {backToProfile} = props
+
+    const [state, setstate] = useState(0)
+
+    const handleEdit = (Ind) =>{
+        setstate(1);
+    }
+
+
+    const { backToProfile,allService } = props
     return (
-        <div className='service_header'>
-            <div className='myOrder_myService'>
-                <span className="faArrowLeft"
-                    onClick={() => backToProfile()}><FaArrowLeft /></span>
-                <span className="order_para">My Service</span>
-                <div className="create_new">
-                    <button className="create_new_btn"
-                    >Create New +</button>
-                </div>
-                <div className="my_service_items">
-                    <div className="my_service_details">
-                        <div className="users_service_details">
-                            <span className="user_names">Ram Lal Sabziwala</span>
-                            <span className="service_imgs">
-                                <img src={require('../../../assets/images/img4.png')}
-                                    alt="images" />
-                            </span>
-                            <div className="switch">
-                                <input type="checkbox" />
-                                <span className="slider round"></span>
-                            </div>
-                            <div className="btn_types">
-                                <button className="edit_btn">Edit</button>
-                                <button className="delete_btn">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className='container_div'>
+
+            <div className='heading_block-ele'>
+                <img className='backErrow_img'
+                    src={require('../../../assets/images/backErrow.png')} alt='back-Errow'
+                    onClick={() => backToProfile()}
+                />
+                {   state === 0 ? 
+                    <span className="block-ele-title font-awesome">My Services</span>
+                :   ''
+                }
             </div>
+
+
+            {
+                state === 0 ?
+            <>
+            <div className='font-awesome'>
+                <span className='create_new-link'>Create New +</span>
+            </div>
+
+            <div className='service_block'>
+                {allService.map((e,Ind)=>
+                <Services  allService={e} 
+                Ind={Ind}
+                handleEdit={handleEdit}/>
+                )}
+            </div>
+            </>
+            : 
+            <EditService />
+            
+            }
+            
         </div>
     )
 }

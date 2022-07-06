@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaStar } from 'react-icons/fa';
 import Order from './Order';
 import './myOrder.css';
 
@@ -14,7 +13,7 @@ const MyOrder = (props) => {
                     src={require('../../../assets/images/backErrow.png')} alt='back-Errow'
                     onClick={() => backToProfile()}
                 />
-                <span className="block-ele-title style_inter">Orders</span>
+                <span className="block-ele-title font-awesome">Orders</span>
             </div>
             
             <div className='order_block'>
@@ -26,7 +25,7 @@ const MyOrder = (props) => {
                         />
                     )
                 }
-                <div className='more-element style_inter'>
+                <div className='more-element font-awesome'>
                 No more orders to display
                 </div>
             </div>

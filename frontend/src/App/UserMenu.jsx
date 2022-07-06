@@ -3,7 +3,8 @@ import Menu from '../Pages/UserProfile/Menu/Menu';
 import EditUser from '../Pages/UserProfile/EditUser/EditUser';
 import MyOrder from '../Pages/UserProfile/MyOrder/MyOrder';
 import MyService from '../Pages/UserProfile/MyService/MyService';
-
+import imgVeg from '../assets/images/img2.png';
+import waterBottle from '../assets/images/waterBottle.png'
 const UserMenu = () => {    
 
 
@@ -16,7 +17,10 @@ const allOrders =
   {names:'Priya', ordStatus:'Delivered',devAddres:'Deliver at 123, Abc Society, Delhi',reminder:'Note- Please call me at my number when you are here. I will be available till 8pm',date:'Friday,22 April'},
 ]
 
-
+const allService = [
+  {names:'RamLal Sabziwala', img:imgVeg},
+  {names:'Liv Pure', img:waterBottle},
+]
 
 const [state, setstate] = useState(0);
 
@@ -63,6 +67,7 @@ const fromServiceBackToProfile = () =>{
         />
         :
         <MyService 
+        allService={allService}
         backToProfile = {fromServiceBackToProfile}
         />
       }

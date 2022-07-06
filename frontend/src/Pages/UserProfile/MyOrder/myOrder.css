@@ -87,7 +87,7 @@
     padding-left: 4px;
 }
 
-.button-type{
+.order-btns {
     box-sizing: border-box;
     margin-top: 5px;
     font-size: var(--font-size-small);
@@ -95,13 +95,7 @@
 .btn_accept{
     width: 93px;
     height: 26px;
-    border: none;
-    outline: none;
-    text-align: center;
-    color: var(--white);
-    background: var(--blue);
     font-size: var(--font-size-small);
-    cursor: pointer;
     border-radius: var(--border-radius-2);
 }
 .btn_cancel{
@@ -130,7 +124,7 @@
 }
 
 @media screen and (min-width:513px) {
-    .button-type{
+    .order-btns {
         box-sizing: border-box;
         margin-top: 1.5rem;
     }    

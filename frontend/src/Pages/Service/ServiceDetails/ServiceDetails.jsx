@@ -1,25 +1,26 @@
-import React, {useState} from 'react';
-import "./addService.css";
+import React, { useState } from 'react';
+import "./serviceDetails.css";
 import AllItems from './AllItems';
 
-const AddService = (props) => {
+const ServiceDetails = (props) => {
 
     const { backToCreateService, handleAddService } = props;
     const itemsArr = [
-        {itemsName:'+'},{ itemsName:'+'},
-        {itemsName:'+'},{itemsName:'+'},
-        {itemsName:'+'},{itemsName:'+'},
-        {itemsName:'+'},{itemsName:'+'},
+        { itemsName: '+' }, { itemsName: '+' },
+        { itemsName: '+' }, { itemsName: '+' },
+        { itemsName: '+' }, { itemsName: '+' },
+        { itemsName: '+' }, { itemsName: '+' },
     ]
-  
+
     const [serviceName, setserviceName] = useState({
-        serviceNames:''
+        serviceNames: ''
     });
 
-    const handleServiceChange = (e) =>{
+    const handleServiceChange = (e) => {
         const name = e.target.value;
         setserviceName(name);
-;    }
+        ;
+    }
 
     return (
         <div className='container_div'>
@@ -37,14 +38,21 @@ const AddService = (props) => {
                 </div>
 
                 <p className='addService_block-title'>Add Images</p>
+                
                 <div className="addService_block-images">
-                    <div className="add_images">+</div>
-                    <div className="add_images">+</div>
-                    <div className="add_images">+</div>
+                    <div className="add_images">
+                        <span>+</span>
+                    </div>
+                    <div className="add_images">
+                        <span>+</span>
+                    </div>
+                    <div className="add_images">
+                        <span>+</span>
+                    </div>
                 </div>
                 <p className="available_item-title">Add available items</p>
-                
-                <AllItems items={itemsArr}/>
+
+                <AllItems items={itemsArr} />
 
                 <div className='continue_btn addService_btn'>
                     <button className='btn_primary'
@@ -56,4 +64,4 @@ const AddService = (props) => {
     )
 }
 
-export default AddService
+export default ServiceDetails

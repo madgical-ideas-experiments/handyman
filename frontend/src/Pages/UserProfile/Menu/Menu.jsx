@@ -17,8 +17,8 @@ const Menu = (props) => {
                         <img className='user_icon' src={require('../../../assets/images/userIcon.png')}
                             alt="user_icons"
                         />
-                        <span className="user_name style_inter">User Name</span>
-                        <span className='edit_para style_inter'
+                        <span className="user_name font-awesome">User Name</span>
+                        <span className='edit_para font-awesome'
                             onClick={() => showUserProfile()}>Edit Profile</span>
                     </div>
                 </div>
@@ -29,21 +29,21 @@ const Menu = (props) => {
                             src={require('../../../assets/images/todoIcon.png')}
                             alt="user_icons"
                         />
-                        <span className='style_inter'>My Order</span>
+                        <span className='font-awesome'>My Order</span>
                     </div>
                     <hr />
                     <div className="block_service_items flex"
                         onClick={() => handleMyService()}>
                         <img src={require('../../../assets/images/service.png')}
                             alt="" />
-                        <span className='style_inter'>My Service</span>
+                        <span className='font-awesome'>My Service</span>
                     </div>
                     <hr />
                 </div>
                 <div className="logout_btn flex flex-row">
                     <img src={require('../../../assets/images/logout.png')}
                         alt="" />
-                    <span className="logout_para style_inter">Log out</span>
+                    <span className="logout_para font-awesome">Log out</span>
                 </div>
             </div>
         </div>

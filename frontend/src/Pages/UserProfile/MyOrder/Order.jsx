@@ -10,10 +10,10 @@ const Order = (props) => {
     return (
         <div className='order_block-element'>
             <div className='element-name-date'>
-                <span className='element-name style_inter'>{names}</span>
-                <span className='element-date style_inter'>{date}</span>
+                <span className='element-name font-awesome'>{names}</span>
+                <span className='element-date font-awesome'>{date}</span>
             </div>
-            <div className='element-status style_inter'>
+            <div className='element-status font-awesome'>
                 {
                     ordStatus === 'In progress' ?
                         <span className='status-progress'>{ordStatus}</span>
@@ -25,20 +25,20 @@ const Order = (props) => {
                 }
                 {ordStatus === 'Delivered' ? <img src={require('../../../assets/images/checked.png')} alt='' /> : ''}
             </div>
-            <div className='ele-deliver-add style_inter'>
+            <div className='ele-deliver-add font-awesome'>
                 <img src={require('../../../assets/images/carbon_location.png')} />
                 <span>{devAddres}</span>
             </div>
-            <div className=' ele-reminder style_inter'>{reminder}</div>
-            <div className='button-type style_inter'>
+            <div className=' ele-reminder font-awesome'>{reminder}</div>
+            <div className='button order-btns font-awesome'>
                 {
                     ordStatus === 'In progress' ?
                     <>
-                        <button className='btn_accept style_inter'>Accept</button>
-                        <button className=' btn_danger btn_cancel style_inter'>Cancel</button>
+                        <button className=' btn_primary btn_accept font-awesome'>Accept</button>
+                        <button className=' btn_danger btn_cancel font-awesome'>Cancel</button>
                     </>
                     : ordStatus === 'Delivered' ?
-                        <div className='ele_ratting'>
+                        <div className='ele_ratting font-awesome'>
                             <span>Service Rating</span>
                             <span className='service_ratting'>
                                 <img src={require('../../../assets/images/star.png')} />
@@ -46,7 +46,7 @@ const Order = (props) => {
                                 <img src={require('../../../assets/images/star.png')} />
                             </span>
                         </div>
-                        : ''
+                    : ''
                 }
             </div>
         </div>

@@ -1,0 +1,16 @@
+.edit_Service-block{
+    padding: 2px 1rem 0 1rem;
+}
+
+.img_items{
+    width: 90px;
+    height: 96px;
+    align-items: center;
+}
+.img_items img{
+    width: 90px;
+    height: 96px;
+    border-radius: var(--border-radius-1);
+}
+
+
