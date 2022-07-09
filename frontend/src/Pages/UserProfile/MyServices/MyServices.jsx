@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import Services from './Services'
-import './myService.css';
+import Service from './Service'
+import './myServices.css';
 import EditService from '../EditService/EditService';
 
 
-const MyService = (props) => {
+const MyServices = (props) => {
 
     const [state, setstate] = useState(0)
 
@@ -13,7 +13,7 @@ const MyService = (props) => {
     }
 
 
-    const { backToProfile,allService } = props
+    const { backToProfile,providers } = props
     return (
         <div className='container_div'>
 
@@ -37,8 +37,8 @@ const MyService = (props) => {
             </div>
 
             <div className='service_block'>
-                {allService.map((e,Ind)=>
-                <Services  allService={e} 
+                {providers.map((e,Ind)=>
+                <Service  element={e} 
                 Ind={Ind}
                 handleEdit={handleEdit}/>
                 )}
@@ -53,4 +53,4 @@ const MyService = (props) => {
     )
 }
 
-export default MyService
+export default MyServices

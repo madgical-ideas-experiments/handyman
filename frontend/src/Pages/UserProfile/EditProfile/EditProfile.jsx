@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
-import './editUser.css';
+import './editProfile.css';
 
-const EditUser = (props) => {
+const EditProfile = (props) => {
     const [data, setData] = useState(false);
     
     const [details, setDetails] = useState({
@@ -52,4 +52,4 @@ const EditUser = (props) => {
     )
 }
 
-export default EditUser;
+export default EditProfile;

@@ -1,11 +1,11 @@
 import React from 'react';
 import Order from './Order';
-import './myOrder.css';
+import './myOrders.css';
 
 
-const MyOrder = (props) => {
+const MyOrders = (props) => {
 
-    const { backToProfile, allOrders } = props;
+    const { backToProfile, users } = props;
     return (
         <div className='container_div'>
             <div className='heading_block-ele'>
@@ -19,9 +19,9 @@ const MyOrder = (props) => {
             <div className='order_block'>
                 
                 {
-                    allOrders.map((e) =>
+                    users.map((e) =>
                         <Order
-                        allOrders={e}
+                        element={e}
                         />
                     )
                 }
@@ -34,4 +34,4 @@ const MyOrder = (props) => {
     )
 }
 
-export default MyOrder
+export default MyOrders

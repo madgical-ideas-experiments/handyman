@@ -1,9 +1,9 @@
 import React from 'react'
-import './myService.css';
+import './myServices.css';
 
-const Services = (props) => {
-    const { allService,handleEdit,Ind } = props;
-    const { names, img } = allService;
+const Service = (props) => {
+    const { element,handleEdit,Ind } = props;
+    const { names, img } = element;
     return (
         <div className='myService_block-ele flex flex-row'>
             <div className='flex flex-col'>
@@ -11,10 +11,10 @@ const Services = (props) => {
                     <span className="user_names font-awesome">{names}</span>
                     
                     
-                    <span className='switch switch-btn'>
-                        <input type="checkbox"  />
-                        <span className="slider"></span>
-                    </span>
+                    <label className='switch switch-btn'>
+                        <input type="checkbox" />
+                        <span className="slider" />
+                    </label>
 
 
                 </div>
@@ -34,4 +34,4 @@ const Services = (props) => {
     )
 }
 
-export default Services
+export default Service

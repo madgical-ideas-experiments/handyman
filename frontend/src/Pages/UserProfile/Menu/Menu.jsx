@@ -29,7 +29,7 @@ const Menu = (props) => {
                             src={require('../../../assets/images/todoIcon.png')}
                             alt="user_icons"
                         />
-                        <span className='font-awesome'>My Order</span>
+                        <span className='font-awesome'>Orders</span>
                     </div>
                     <hr />
                     <div className="block_service_items flex"

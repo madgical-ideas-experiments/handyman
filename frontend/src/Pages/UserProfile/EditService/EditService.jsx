@@ -1,6 +1,7 @@
 import React from 'react';
 import AllItems from '../../Service/ServiceDetails/AllItems';
 import './editService.css';
+
 const EditService = () => {
     const itemsArr = [
         {itemsName:'+'},{ itemsName:'+'},

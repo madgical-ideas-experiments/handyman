@@ -1,29 +1,18 @@
 import React, {useState} from 'react'
 import Menu from '../Pages/UserProfile/Menu/Menu';
-import EditUser from '../Pages/UserProfile/EditUser/EditUser';
-import MyOrder from '../Pages/UserProfile/MyOrder/MyOrder';
-import MyService from '../Pages/UserProfile/MyService/MyService';
-import imgVeg from '../assets/images/img2.png';
-import waterBottle from '../assets/images/waterBottle.png'
+import EditProfile from '../Pages/UserProfile/EditProfile/EditProfile';
+import MyOrders from '../Pages/UserProfile/MyOrders/MyOrders';
+import MyServices from '../Pages/UserProfile/MyServices/MyServices';
+
+import {getUsers} from '../API/Users';
+import {getProviders} from '../API/Providers';
+
 const UserMenu = () => {    
 
-
-
-
-const allOrders = 
-[
-  {names:'Sweta', ordStatus:'In progress',devAddres:'Deliver at 123, Abc Society, Delhi',reminder:'Note- Please call me at my number when you are here. I will be available till 8pm',date:'Friday,22 April'},
-  {names:'Neeraj', ordStatus:'Canceled',devAddres:'Deliver at 123, Abc Society, Delhi',reminder:'Note- Please call me at my number when you are here. I will be available till 8pm',date:'Friday,22 April'},
-  {names:'Priya', ordStatus:'Delivered',devAddres:'Deliver at 123, Abc Society, Delhi',reminder:'Note- Please call me at my number when you are here. I will be available till 8pm',date:'Friday,22 April'},
-]
-
-const allService = [
-  {names:'RamLal Sabziwala', img:imgVeg},
-  {names:'Liv Pure', img:waterBottle},
-]
+const users = getUsers();
+const providers = getProviders();
 
 const [state, setstate] = useState(0);
-
 const showUserProfile = () =>{
   setstate(1);
 }
@@ -57,17 +46,17 @@ const fromServiceBackToProfile = () =>{
         />
         :
         state === 1 ?
-        <EditUser 
+        <EditProfile 
         handleEdit={handleEdit}/>
         : 
         state === 2 ?
-        <MyOrder 
+        <MyOrders 
         backToProfile = {backToProfile}
-        allOrders = {allOrders}
+        users = {users}
         />
         :
-        <MyService 
-        allService={allService}
+        <MyServices 
+        providers={providers}
         backToProfile = {fromServiceBackToProfile}
         />
       }

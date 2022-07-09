@@ -1,11 +1,10 @@
 import React from 'react';
-import './myOrder.css';
-import { FaStar } from 'react-icons/fa';
+import './myOrders.css';
 
 
 const Order = (props) => {
-    const {allOrders} = props;
-    const {names,date,ordStatus,devAddres,reminder} = allOrders;
+    const {element} = props;
+    const {names,date,ordStatus,devAddres,reminder} = element;
     
     return (
         <div className='order_block-element'>
