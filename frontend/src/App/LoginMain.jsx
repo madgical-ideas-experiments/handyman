@@ -42,13 +42,18 @@ const LoginMain = () => {
    }
 
 
+   const loginAsCustomer = () =>{
+    setstate(7)
+   }
+
   return (
     <>
     {
         state === 0 ?
         <RegisterPage 
         handleSignIn = {handleSignIn}
-        handleRegister = {handleRegister}/>
+        handleRegister = {handleRegister}
+        />
         :
 
         state === 1 ? 
@@ -62,22 +67,30 @@ const LoginMain = () => {
         />
         :
         state === 3 ?
-        <SignIn handleUserLogin = {handleUserLogin}/>
+        <SignIn handleUserLogin = {handleUserLogin}
+        />
 
         : state === 4 ?
-        <Login
+        <Login 
+        loginAsCustomer = {loginAsCustomer}
         loginAsServiceProvider = {loginAsServiceProvider}
-       />
+        />
         :
          
         state === 5 ?
         <CreateServices 
         handleAddService = {handleAddService}
-        backToLogin={backToLogin}/>
+        backToLogin={backToLogin}
+        />
         :
+        
+        state === 6 ? 
 
         <ServiceDetails 
-        backToCreateService = {backToCreateService}/>
+        backToCreateService = {backToCreateService}
+        />
+        :
+        'Login s a customer'
     }
     </>
   )

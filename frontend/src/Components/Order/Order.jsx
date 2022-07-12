@@ -1,5 +1,5 @@
 import React from 'react';
-import './myOrders.css';
+import './order.css';
 
 
 const Order = (props) => {
@@ -22,10 +22,10 @@ const Order = (props) => {
                             :
                             <span className='status-delivered'>{ordStatus}</span>
                 }
-                {ordStatus === 'Delivered' ? <img src={require('../../../assets/images/checked.png')} alt='' /> : ''}
+                {ordStatus === 'Delivered' ? <img src={require('../../assets/images/checked.png')} alt='' /> : ''}
             </div>
             <div className='ele-deliver-add font-awesome'>
-                <img src={require('../../../assets/images/carbon_location.png')} />
+                <img src={require('../../assets/images/carbon_location.png')} />
                 <span>{devAddres}</span>
             </div>
             <div className=' ele-reminder font-awesome'>{reminder}</div>
@@ -40,9 +40,9 @@ const Order = (props) => {
                         <div className='ele_ratting font-awesome'>
                             <span>Service Rating</span>
                             <span className='service_ratting'>
-                                <img src={require('../../../assets/images/star.png')} />
-                                <img src={require('../../../assets/images/star.png')} />
-                                <img src={require('../../../assets/images/star.png')} />
+                                <img src={require('../../assets/images/star.png')} />
+                                <img src={require('../../assets/images/star.png')} />
+                                <img src={require('../../assets/images/star.png')} />
                             </span>
                         </div>
                     : ''

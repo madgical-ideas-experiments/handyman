@@ -1,5 +1,7 @@
 import React from 'react';
 import AllItems from '../../Service/ServiceDetails/AllItems';
+import   '../../Service/ServiceDetails/serviceDetails.css';
+// import   '../../Service/CreateServices/createService.css';
 import './editService.css';
 
 const EditService = () => {

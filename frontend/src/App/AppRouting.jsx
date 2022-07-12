@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 const AppRouting = () => {
   const { isLogin } = useSelector((state) => state.user);
-  // console.log(isLogin);
+
   return (
     <BrowserRouter>
       <Routes>

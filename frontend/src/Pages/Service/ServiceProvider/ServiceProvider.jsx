@@ -45,7 +45,7 @@ const ServiceProvider = (props) => {
                         </div>
                         <div className="chat">
                             <span>Chat
-                                <img className='chat_img' src={require('../../../assets/images/chat.png')} />
+                                <img className='chat_img' src={require('../../../assets/images/chatIcon.png')} />
                             </span>
                         </div>
                     </div>

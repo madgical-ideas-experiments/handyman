@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import Service from './Service'
 import './myServices.css';
 import EditService from '../EditService/EditService';
+import Footer from '../../../Parts/Footer/Footer';
 
 
 const MyServices = (props) => {
 
-    const [state, setstate] = useState(0)
+    const [state, setstate] = useState(0);
 
     const handleEdit = (Ind) =>{
         setstate(1);
@@ -48,6 +49,8 @@ const MyServices = (props) => {
             <EditService />
             
             }
+
+            <Footer />
             
         </div>
     )
