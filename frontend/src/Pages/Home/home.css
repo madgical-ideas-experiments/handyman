@@ -23,6 +23,7 @@
 .no_data {
   text-align: center;
   color: red;
+  padding-top: 100px;
 }
 .category_container {
   display: flex;

@@ -6,14 +6,21 @@ import { getCategories } from "../../API/Categories";
 
 const Home = (props) => {
   const [search, setSearch] = useState("");
+  const [location, setLocation] = useState("");
   const handleSearch = (e) => {
     const { currentTarget: input } = e;
-    setSearch(input.value);
+    if (input.name === "search") {
+      setSearch(input.value);
+    } else {
+      setLocation(input.value);
+    }
   };
+
   let categories = getCategories();
   let filteredCategories = categories.filter((cat) =>
     cat.items.toLowerCase().includes(search.toLowerCase())
   );
+  console.log(categories);
   return (
     <div className="create_service_container">
       <div className="forms_element">
@@ -23,14 +30,17 @@ const Home = (props) => {
             type="text"
             placeholder="Search Anything"
             value={search}
+            name="search"
             onChange={handleSearch}
           ></input>
         </div>
         <div className="forms_element_inputs">
           <input
             type="text"
-            className="forms_element_inputs"
             placeholder="Current Location"
+            value={location}
+            name="location"
+            onChange={handleSearch}
           ></input>
         </div>
       </div>
