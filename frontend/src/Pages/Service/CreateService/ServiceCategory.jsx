@@ -13,7 +13,7 @@ const ServiceCategory = (props) => {
     }
   });
   return (
-    <div className="px-3">
+    <div className="">
       <div className="service_category">
         {scroller2.map((num) => (
           <div className="service_category_img">

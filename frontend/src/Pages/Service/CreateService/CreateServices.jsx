@@ -168,10 +168,7 @@ const CreateServices = (props) => {
           )}
         </div>
         <div className="available_categories">
-          <p className="px-3">
-            {" "}
-            Choose your service from the available categories
-          </p>
+          <p> Choose your service from the available categories</p>
 
           <ServiceCategory servicesCat={servicesCat} />
         </div>

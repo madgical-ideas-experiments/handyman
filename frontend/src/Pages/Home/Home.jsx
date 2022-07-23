@@ -157,10 +157,10 @@ const Home = (props) => {
             {selectedItems.map((cat, index) => (
               <div style={{ borderRadius: "5px", backgroundColor: "#F5F5F5" }}>
                 <div className="row px-3">
-                  <div className="col-8 p-2">
-                    <span style={{ fontSize: "20px" }}>{cat.shopName}</span>
+                  <div className="col-6 p-2">
+                    <span className="shop_name">{cat.shopName}</span>
                     <br />
-                    <span>{cat.distance}</span>
+                    <span className="inside_data">{cat.distance}</span>
                     <br />
                     <span>
                       {cat.stars.map((s) => (
@@ -181,10 +181,12 @@ const Home = (props) => {
                     />
                     <br />
                     <div className="col-6">
-                      <span>{cat.types.map((c) => c + ", ")}</span>
+                      <span className="inside_data">
+                        {cat.types.map((c) => c + ", ")}
+                      </span>
                     </div>
                   </div>
-                  <div className="col-4 p-2">
+                  <div className="col-6 p-2">
                     <img
                       src={cat.img}
                       style={{ width: "100%", borderRadius: "5px" }}
